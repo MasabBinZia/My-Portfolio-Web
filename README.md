@@ -10,7 +10,7 @@ https://masab-mbz-portfolio.vercel.app/
 
     
 ## Tech Stack
- NextJs,TailwindCSS
+ NextJs , TailwindCSS ,TypeScript.
 
 ## Run Locally
 
