@@ -17,19 +17,19 @@ export const meta = {
         title: 'TokenExchangePro',
         description: 'Simple Crypto Trading Landing Page.',
         link: 'https://tokenexchangepro.netlify.app/',
-        github: 'https://github.com/MasabBinZia/TokenExchangePro'
+        github: '/MasabBinZia/TokenExchangePro'
       },
       {
         title: 'AliAhmed_Portfolio',
         description: 'Minimal React Porfolio!',
         link: 'http://hateful-floor.surge.sh',
-        github: 'https://github.com/MasabBinZia/AliAhmed_Portfolio'
+        github: '/MasabBinZia/AliAhmed_Portfolio'
       },
       {
         title: 'Sci-Fi City ',
         description: 'Sci city react parallax-app for paractise!',
         link: 'http://sci-fi-city.surge.sh/',
-        github: 'https://github.com/MasabBinZia/Simple-ReactParallax-app'
+        github: '/MasabBinZia/Simple-ReactParallax-app'
       }
     ]
   };
