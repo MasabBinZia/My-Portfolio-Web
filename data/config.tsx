@@ -16,20 +16,20 @@ export const meta = {
       {
         title: 'TokenExchangePro',
         description: 'Simple Crypto Trading Landing Page.',
-        link: 'https://tokenexchangepro.netlify.app/',
-        github: '/MasabBinZia/TokenExchangePro'
+        link: 'https://tokenexchangepro.netlify.app',
+        github: 'MasabBinZia/TokenExchangePro'
       },
       {
         title: 'AliAhmed_Portfolio',
         description: 'Minimal React Porfolio!',
         link: 'http://hateful-floor.surge.sh',
-        github: '/MasabBinZia/AliAhmed_Portfolio'
+        github: 'MasabBinZia/AliAhmed_Portfolio'
       },
       {
         title: 'Sci-Fi City ',
         description: 'Sci city react parallax-app for paractise!',
-        link: 'http://sci-fi-city.surge.sh/',
-        github: '/MasabBinZia/Simple-ReactParallax-app'
+        link: 'http://sci-fi-city.surge.sh',
+        github: 'MasabBinZia/Simple-ReactParallax-app'
       }
     ]
   };
@@ -56,6 +56,6 @@ export const meta = {
     email: 'masabmbz5@gmail.com',
     github: 'MasabBinZia',
     linkedin: 'masab-bin-zia-411a0922a',
-    twitter: ''
+    twitter: 'hadescreeping'
   };
   
