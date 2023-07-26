@@ -11,7 +11,7 @@ export default function Stack() {
       <div className="w-full flex flex-wrap -m-2">
         {stack.stack.map((item, index) => (
           <span
-            className="border  border-lightText rounded-lg m-2 px-3 py-1"
+            className="border  border-lightText rounded-lg m-2 px-3 py-1 hover:scale-110 duration-300 cursor-pointer"
             key={index}
           >
             {item}
