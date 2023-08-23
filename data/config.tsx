@@ -36,21 +36,44 @@ export const projects = {
   ],
 };
 
+import HTML from "../public/static/icons/TechIcons/Html.svg";
+import CSS from "../public/static/icons/TechIcons/Css.svg";
+import JS from "../public/static/icons/TechIcons/Js.svg";
+import TS from "../public/static/icons/TechIcons/Ts.svg";
+import React from "../public/static/icons/TechIcons/React.svg";
+import Next from "../public/static/icons/TechIcons/Next.svg";
+import Tailwind from "../public/static/icons/TechIcons/Tailwindcss.svg";
+import Git from "../public/static/icons/TechIcons/Git.svg";
+import NodeJS from "../public/static/icons/TechIcons/Nodejs.svg";
+import Bootstrap from "../public/static/icons/TechIcons/Bootstrap.svg";
+import Figma from "../public/static/icons/TechIcons/Figma.svg";
+// import Csh from "../public/static/icons/TechIcons/C#.svg";
+import Python from "../public/static/icons/TechIcons/python.svg";
+import Redux from "../public/static/icons/TechIcons/Redux.svg";
+import MySql from "../public/static/icons/TechIcons/mySql.svg";
+import MUI from "../public/static/icons/TechIcons/mui.svg";
+import Sass from "../public/static/icons/TechIcons/sass.svg";
+
 export const stack = {
   title: "My Tech Stack",
   stack: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Typescript",
-    "React",
-    "NextJS",
-    "TailwindCSS",
-    "Git",
-    ".Net",
-    "Nodejs",
-    "Bootstrap",
-  ],
+    { id: 1, Name: "HTML", Icon: HTML },
+    { id: 2, Name: "CSS", Icon: CSS },
+    { id: 3, Name: "JavaScript", Icon: JS },
+    { id: 4, Name: "TypeScript", Icon: TS },
+    { id: 5, Name: "React", Icon: React },
+    { id: 6, Name: "Next.js", Icon: Next },
+    { id: 7, Name: "Tailwind CSS", Icon: Tailwind },
+    { id: 8, Name: "Git", Icon: Git },
+    { id: 9, Name: "Node.js", Icon: NodeJS },
+    { id: 10, Name: "Bootstrap", Icon: Bootstrap },
+    { id: 11, Name: "Figma", Icon: Figma },
+    { id: 12, Name: "Python", Icon: Python },
+    { id: 13, Name: "Redux", Icon: Redux },
+    { id: 14, Name: "MySQL", Icon: MySql },
+    { id: 15, Name: "Material-UI", Icon: MUI },
+    { id: 16, Name: "Sass", Icon: Sass },
+  ]
 };
 
 export const contact = {

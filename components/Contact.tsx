@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { contact } from '@/data/config';
+import Image from "next/image";
+import { contact } from "@/data/config";
 
 export default function Stack() {
   return (
@@ -10,9 +10,9 @@ export default function Stack() {
         </h2>
       </div>
       <p>
-      Reach out by email:{' '}
+        Reach out by email:{" "}
         <a
-          className="dark:text-white text-black transition-colors duration-500"
+          className="dark:text-white text-black transition-colors duration-500 hover:underline"
           href={`mailto:${contact.email}`}
         >
           {contact.email}
@@ -27,8 +27,8 @@ export default function Stack() {
           >
             <Image
               src="/static/icons/github.svg"
-              width={20}
-              height={20}
+              width={30}
+              height={30}
               alt="Github icon"
             />
           </a>
@@ -41,8 +41,8 @@ export default function Stack() {
           >
             <Image
               src="/static/icons/linkedin.svg"
-              width={20}
-              height={20}
+              width={30}
+              height={30}
               alt="LinkedIn icon"
             />
           </a>
@@ -55,8 +55,8 @@ export default function Stack() {
           >
             <Image
               src="/static/icons/twitter.svg"
-              width={20}
-              height={20}
+              width={30}
+              height={30}
               alt="twitter icon"
             />
           </a>

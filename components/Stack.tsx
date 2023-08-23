@@ -1,4 +1,5 @@
-import { stack } from '@/data/config';
+import { stack } from "@/data/config";
+import Image from "next/image";
 
 export default function Stack() {
   return (
@@ -8,14 +9,18 @@ export default function Stack() {
           {stack.title}
         </h2>
       </div>
-      <div className="w-full flex flex-wrap -m-2">
+      <div className="w-full flex flex-wrap gap-6 -m-2">
         {stack.stack.map((item, index) => (
-          <span
-            className="border  border-lightText rounded-lg m-2 px-3 py-1 hover:scale-110 duration-300 cursor-pointer"
-            key={index}
-          >
-            {item}
-          </span>
+          <div key={index} className="flex flex-col items-center text-center">
+            <Image
+              className="hover:scale-110 duration-300 cursor-pointer"
+              src={item.Icon}
+              alt=""
+              width={60}
+              height={60}
+            />
+            <span>{item.Name}</span>
+          </div>
         ))}
       </div>
     </div>
