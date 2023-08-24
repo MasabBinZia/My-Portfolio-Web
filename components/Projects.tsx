@@ -1,7 +1,18 @@
-import Image from 'next/image';
-import { projects } from '@/data/config';
+import Image from "next/image";
+import { projects } from "@/data/config";
+import { useCallback, useState } from "react";
 
 export default function Projects() {
+  const [variant, setVariant] = useState("My Projects");
+
+  const toggleVariant = useCallback(() => {
+    setVariant((currentVariant) =>
+      currentVariant === "My Projects"
+        ? "Clients & Work Projects"
+        : "My Projects"
+    );
+  }, []);
+
   return (
     <div className="">
       <div className="overflow-x-hidden w-full">
@@ -10,20 +21,74 @@ export default function Projects() {
         </h2>
       </div>
       <p className="text-lg">{projects.desc}</p>
-      <div className=" mt-8">
-        {projects.projects.map((item, index) => {
-          return (
+      <div className="mt-8">
+        <div className="flex justify-center py-2">
+          <button
+            className="py-2 px-4 rounded-xl dark:bg-white bg-black hover:opacity-60 duration-300 "
+            onClick={toggleVariant}
+          >
+            See
+            <span>
+              {" "}
+              {variant === "My Projects"
+                ? "Clients & Work Projects"
+                : "My Projects"}
+            </span>
+          </button>
+        </div>
+        {variant === "Clients & Work Projects" && (
+          <div>
+            {projects.Clientprojects.map((item, index) => (
+              <div
+                key={index}
+                className="p-6 border border-lightText rounded-xl mb-4"
+              >
+                <h3 className="text-center">{item.title}</h3>
+                <p className="text-center">{item.description}</p>
+                <div className="flex flex-col items-center -m-3 pt-5">
+                  {item.link && (
+                    <a
+                      href={item.link}
+                      className="flex items-center py-1 px-3"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        src="/static/icons/link.svg"
+                        width={18}
+                        height={18}
+                        alt="Link icon"
+                      />
+                      <span className="ml-2 text-lightText transition-colors duration-500">
+                        {item.link}
+                      </span>
+                    </a>
+                  )}
+                  {item.stack && (
+                    <p className="flex text-black dark:text-white text-3xl justify-center space-x-4">
+                      {item.stack}
+                    </p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+      {variant === "My Projects" && (
+        <div>
+          {projects.Myprojects.map((item, index) => (
             <div
               key={index}
               className="p-6 border border-lightText rounded-xl mb-4"
             >
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-              <div className="flex items-center flex-wrap -m-3 pt-5">
+              <h3 className="text-center">{item.title}</h3>
+              <p className="text-center">{item.description}</p>
+              <div className="flex flex-col items-center -m-3 pt-5">
                 {item.link && (
                   <a
                     href={item.link}
-                    className="flex items-center  py-1 px-3"
+                    className="flex items-center py-1 px-3"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -33,7 +98,7 @@ export default function Projects() {
                       height={18}
                       alt="Link icon"
                     />
-                    <span className="ml-2  text-lightText  transition-colors duration-500">
+                    <span className="ml-2 text-lightText transition-colors duration-500">
                       {item.link}
                     </span>
                   </a>
@@ -51,16 +116,30 @@ export default function Projects() {
                       height={18}
                       alt="Link icon"
                     />
-                    <span className="ml-2  text-lightText  transition-colors duration-500">
+                    <span className="ml-2 text-lightText transition-colors duration-500">
                       {item.github}
                     </span>
                   </a>
                 )}
+                {item.stack && (
+                  <p className="flex text-black dark:text-white text-3xl justify-center space-x-4">
+                    {item.stack}
+                  </p>
+                )}
               </div>
             </div>
-          );
-        })}
-      </div>
+          ))}
+          <div className="flex justify-center">
+            <a
+              target="_blank"
+              href="https://github.com/MasabBinZia?tab=repositories"
+              className="py-2 px-4 rounded-xl border border-lightText "
+            >
+              See More
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

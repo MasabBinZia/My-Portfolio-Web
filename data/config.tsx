@@ -10,28 +10,85 @@ export const hero = {
   more: "🌱 I’m currently learning Typescript,Next.js,Web3.0 and Back-End Development",
 };
 
+import { SiTypescript } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiReact } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { SiFirebase } from "react-icons/si";
+import { SiCss3 } from "react-icons/si";
+import { SiBootstrap } from "react-icons/si";
+
 export const projects = {
-  title: "My Projects",
+  title: "Projects",
   desc: "Explore some of my proudest accomplishments in the form of the projects I've brought to life.",
-  projects: [
+  Myprojects: [
     {
       title: "Dine Market",
       description:
         "Dine Market is an e-commerce project developed for the PIAIC hackathon.",
       link: "https://dine-market-ecommerce-web.vercel.app",
       github: "MasabBinZia/Hackthon-01-web-Ecommerce-web",
+      stack: [
+        <SiTypescript />,
+        <TbBrandNextjs />,
+        <SiReact />,
+        <SiTailwindcss />,
+        <SiRedux />,
+      ],
     },
     {
-      title: "AliAhmed_Portfolio",
-      description: "Minimal React Porfolio!",
-      link: "http://hateful-floor.surge.sh",
-      github: "MasabBinZia/AliAhmed_Portfolio",
+      title: "CoinControl Expense Tracker",
+      description:
+        "🪙 CoinControl is ExpenseTracker bulid with Nextjs,TailwindCss and FireBase. ",
+      link: "https://coin-control-expense-tracker.vercel.app",
+      github: "MasabBinZia/CoinControl-ExpenseTracker",
+      stack: [
+        <SiJavascript />,
+        <TbBrandNextjs />,
+        <SiReact />,
+        <SiTailwindcss />,
+        <SiFirebase />,
+      ],
     },
     {
       title: "NFT Marketplace",
       description: " 🚀 Welcome to our cutting-edge NFT Marketplace. ",
       link: "https://nft-market-place-one-taupe.vercel.app",
       github: "MasabBinZia/NFT-MarketPlace",
+      stack: [
+        <SiTypescript />,
+        <TbBrandNextjs />,
+        <SiReact />,
+        <SiTailwindcss />,
+      ],
+    },
+  ],
+  Clientprojects: [
+    {
+      title: "BITXCELS",
+      description: "Welcome to Bitxcels, where innovation meets excellence.",
+      link: "https://bitxcels.com",
+      stack: [
+        <SiJavascript />,
+        <TbBrandNextjs />,
+        <SiReact />,
+        <SiTailwindcss />,
+      ],
+    },
+    {
+      title: "Sheep2mint",
+      description:
+        "Fix existing UI,create new UI components and Created Profile Page.",
+      link: "https://sheep2mint.com",
+      stack: [<SiJavascript />, <SiReact />, <SiCss3 />, <SiBootstrap />],
+    },
+    {
+      title: "SuperFood NFT Frontend",
+      description: "Fix and update UI and added UI components",
+      link: "http://few-control.surge.sh/",
+      stack: [<SiJavascript />, <SiReact />, <SiCss3 />, <SiBootstrap />],
     },
   ],
 };
@@ -73,7 +130,7 @@ export const stack = {
     { id: 14, Name: "MySQL", Icon: MySql },
     { id: 15, Name: "Material-UI", Icon: MUI },
     { id: 16, Name: "Sass", Icon: Sass },
-  ]
+  ],
 };
 
 export const contact = {
