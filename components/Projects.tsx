@@ -83,7 +83,7 @@ export default function Projects() {
         {variant === "My Projects" && (
           <div>
             {projects.Myprojects.map((item, index) => (
-              <ScrollAnimationWrapper>
+              <ScrollAnimationWrapper key={index}>
                 <motion.div
                   variants={scrollAnimation}
                   key={index}
