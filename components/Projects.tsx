@@ -28,8 +28,11 @@ export default function Projects() {
       <p className="text-lg">{projects.desc}</p>
       <div className="mt-8">
         <div className="flex justify-center py-2">
-          <button
-            className="py-2 px-4 rounded-xl dark:text-black text-white  dark:bg-white bg-black hover:opacity-60 duration-300 "
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            className="py-2 px-4 rounded-xl dark:text-black text-white  dark:bg-white bg-black  duration-100 "
             onClick={toggleVariant}
           >
             See
@@ -39,7 +42,7 @@ export default function Projects() {
                 ? "Clients & Work Projects"
                 : "My Projects"}
             </span>
-          </button>
+          </motion.button>
         </div>
         {variant === "Clients & Work Projects" && (
           <ScrollAnimationWrapper>
@@ -137,7 +140,12 @@ export default function Projects() {
                 </motion.div>
               </ScrollAnimationWrapper>
             ))}
-            <div className="flex justify-center">
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="flex justify-center"
+            >
               <a
                 target="_blank"
                 href="https://github.com/MasabBinZia?tab=repositories"
@@ -145,7 +153,7 @@ export default function Projects() {
               >
                 See More
               </a>
-            </div>
+            </motion.div>
           </div>
         )}
       </div>
