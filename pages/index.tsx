@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
 import Stack from '@/components/Stack';
 import { meta } from '@/data/config';
+import GitHubCalendarSection from '@/components/GitHubClander';
 
 export default function Index() {
   return (
@@ -16,6 +17,7 @@ export default function Index() {
         <div className="p-0 space-y-10">
           <Projects />
           <Stack />
+          <GitHubCalendarSection/>
           <Contact />
         </div>
       </div>
