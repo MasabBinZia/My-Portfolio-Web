@@ -39,17 +39,16 @@ export const projects = {
       ],
     },
     {
-      title: "CoinControl Expense Tracker",
+      title: "MovieShowCase App",
       description:
-        "🪙 CoinControl is ExpenseTracker bulid with Nextjs,TailwindCss and FireBase. ",
-      link: "https://coin-control-expense-tracker.vercel.app",
-      github: "MasabBinZia/CoinControl-ExpenseTracker",
+        "Simple Movie show case app which shows top rated movies from TMDB API.",
+      link: "https://movieshow-case-app.vercel.app",
+      github: "MasabBinZia/movieshow-case-app",
       stack: [
-        <SiJavascript />,
+        <SiTypescript />,
         <TbBrandNextjs />,
         <SiReact />,
         <SiTailwindcss />,
-        <SiFirebase />,
       ],
     },
     {
