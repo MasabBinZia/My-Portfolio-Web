@@ -1,7 +1,7 @@
 
 # My-Portfolio Web
 
-Welcome to my portfolio website! I'm a junior frontend developer who's passionate about creating beautiful and user-friendly web experiences. On this site, you'll find some of the projects I've worked on, as well as information about my skills, background, and interests.
+Welcome to my portfolio website! I'm a junior frontend Engineer who's passionate about creating beautiful and user-friendly web experiences. On this site, you'll find some of the projects I've worked on, as well as information about my skills, background, and interests.
 
 
 ## Demo
