@@ -30,9 +30,9 @@ export default function ProjectCard({
         <CardDescription className="dark:text-gray-400 text-gray-800">
           {desc}
         </CardDescription>
-        <div className="flex justify-center items-center gap-2 py-1">
+        {/* <div className="flex justify-center items-center gap-2 py-1">
         {icons}
-        </div>
+        </div> */}
       </CardHeader>
       <CardContent className="flex justify-center gap-10">
         <LinkPreview
