@@ -19,7 +19,7 @@ export default function Goals() {
               <span className="font-semibold text-green-600 pr-2">
                 Pioneer Technology:
               </span>
-              Develop platforms for today's and tomorrow's challenges.
+              Develop platforms for today&apos;s and tomorrow&apos;s challenges.
             </li>
 
             <li>

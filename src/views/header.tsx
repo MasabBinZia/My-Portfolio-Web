@@ -56,7 +56,7 @@ export function Header() {
         </p> */}
       </div>
       <div className="">
-        <h1 className="mt-5 mb-2">👋 Hey there! I'm Masab Bin Zia.</h1>
+        <h1 className="mt-5 mb-2">👋 Hey there! I&apos;m Masab Bin Zia.</h1>
         <p className="text-lg mb-2">Modern Full-Stack Engineer.</p>
         <p className="text-lg mb-2">
           I’m currently learning Learning Full-stack, AI, Web3.0 & DevOps.
@@ -64,7 +64,7 @@ export function Header() {
         <p className="text">
           <span className="dark:text-foreground text-black font-semibold">
             {" "}
-            I'm a Full Stack Developer with 3+ years
+            I&apos;m a Full Stack Developer with 3+ years
           </span>{" "}
           of experience in Web3.0, specializing in scalable web applications,
           microservices, token-based RESTful API servers, and API-driven
