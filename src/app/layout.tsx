@@ -6,7 +6,6 @@ import SmoothScrolling from "@/components/smooth-scrolling";
 import ProgressBar from "@/components/progress-bar";
 import ScrollToTop from "@/components/scroll-to-top";
 import { Toaster } from "@/components/ui/sonner";
-import { Header } from "@/views/header";
 
 const vite = Vite({ subsets: ["latin"], weight: "400" });
 
@@ -30,15 +29,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="p-6 lg:p-20 max-w-4xl m-auto w-full">
-            <SmoothScrolling>
-              <ProgressBar />
-              <Header />
-              {children}
-              <Toaster />
-              <ScrollToTop />
-            </SmoothScrolling>
-          </main>
+          <SmoothScrolling>
+            <ProgressBar />
+            {children}
+            <Toaster />
+            <ScrollToTop />
+          </SmoothScrolling>
         </ThemeProvider>
       </body>
     </html>

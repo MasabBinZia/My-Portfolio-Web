@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Heart, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
@@ -14,7 +14,7 @@ import {
 import Image from "next/image";
 import NavDock from "@/components/nav-dock";
 
-export function Header() {
+export function Header({ views }: { views: any }) {
   const { setTheme } = useTheme();
 
   return (
@@ -51,9 +51,9 @@ export function Header() {
           <span className="animate-ping absolute h-3 w-3 rounded-full bg-sky-400 opacity-75"></span>
           <p className="">Available for hire</p>
         </div>
-        {/* <p className="flex justify-center items-center gap-1">
-          <strong className="text-foreground">90</strong>-Views
-        </p> */}
+        <p className="flex justify-center items-center gap-1">
+          <strong className="text-foreground">{views}</strong> - Views
+        </p>
       </div>
       <div className="">
         <h1 className="mt-5 mb-2">👋 Hey there! I&apos;m Masab Bin Zia.</h1>
