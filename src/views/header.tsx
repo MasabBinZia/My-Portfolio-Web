@@ -22,7 +22,13 @@ export function Header({ views }: { views: any }) {
     <header className="mb-20">
       <div className="flex flex-row items-center justify-between w-full">
         <div className="w-20 h-20 rounded-full relative overflow-hidden">
-          <Image src={pfp} placeholder="blur" priority alt="mbz" />
+          <Image
+            src={pfp}
+            placeholder="blur"
+            priority
+            className="w-20 h-20"
+            alt="mbz"
+          />
         </div>
         <NavDock />
         <DropdownMenu>

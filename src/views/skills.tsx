@@ -47,6 +47,7 @@ export default function Skills() {
               <img
                 src={`https://skillicons.dev/icons?i=${skill.icons}`}
                 alt={`${skill.category} icons`}
+                className="max-w-none max-h-none"
               />
             </div>
           ))}

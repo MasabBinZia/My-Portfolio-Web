@@ -8,7 +8,6 @@ export function ReportView() {
       try {
         await axios.post("/api/views");
       } catch (error) {
-        // console.error("Error posting view:", error);
       }
     };
 
