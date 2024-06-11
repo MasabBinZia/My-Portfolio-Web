@@ -50,7 +50,7 @@ export default function ProjectCard({
             <GitHubLogoIcon className="w-6 h-6" /> Github
           </Link>
         )}
-        <Link href={"/project-details"}>More</Link>
+        <Link href={""}>More</Link>
       </CardContent>
     </Card>
   );
