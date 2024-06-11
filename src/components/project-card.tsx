@@ -15,6 +15,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiReact } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
+import { Separator } from "./ui/separator";
 
 export default function ProjectCard({
   title,
@@ -30,11 +31,10 @@ export default function ProjectCard({
         <CardDescription className="dark:text-gray-400 text-gray-800">
           {desc}
         </CardDescription>
-        {/* <div className="flex justify-center items-center gap-2 py-1">
-        {icons}
-        </div> */}
+
+        <Separator className="my-4" />
       </CardHeader>
-      <CardContent className="flex justify-center gap-10">
+      <CardContent className="flex justify-center items-center gap-10">
         <LinkPreview
           url={projLink}
           className="font-bold flex justify-center items-center gap-1"
@@ -50,6 +50,7 @@ export default function ProjectCard({
             <GitHubLogoIcon className="w-6 h-6" /> Github
           </Link>
         )}
+        <Link href={"/project-details"}>More</Link>
       </CardContent>
     </Card>
   );

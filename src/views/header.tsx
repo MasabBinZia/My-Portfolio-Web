@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import pfp from "../../public/pfp.jpg";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -21,7 +22,7 @@ export function Header({ views }: { views: any }) {
     <header className="mb-20">
       <div className="flex flex-row items-center justify-between w-full">
         <div className="w-20 h-20 rounded-full relative overflow-hidden">
-          <Image src="/pfp.jpg" layout="fill" objectFit="contain" alt="mbz" />
+          <Image src={pfp} placeholder="blur" priority alt="mbz" />
         </div>
         <NavDock />
         <DropdownMenu>
