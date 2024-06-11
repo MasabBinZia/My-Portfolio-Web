@@ -1,6 +1,6 @@
 "use client";
 import axios from "axios";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 export function ReportView() {
   useEffect(() => {
@@ -8,7 +8,7 @@ export function ReportView() {
       try {
         await axios.post("/api/views");
       } catch (error) {
-        console.error("Error posting view:", error);
+        // console.error("Error posting view:", error);
       }
     };
 

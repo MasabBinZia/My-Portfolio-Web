@@ -2,6 +2,7 @@
 import React, { useState, useCallback } from "react";
 import { Button } from "./ui/button";
 import { LoaderCircle } from "lucide-react";
+import { toast } from "sonner";
 
 const PdfDownloadButton = () => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -28,9 +29,10 @@ const PdfDownloadButton = () => {
       document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
     } catch (error) {
-      console.error(error);
+      toast("Error Downloading Portfolio PDF. Try Again!");
     } finally {
       setLoading(false);
+      toast("Portfolio PDF Downloaded");
     }
   }, []);
 
