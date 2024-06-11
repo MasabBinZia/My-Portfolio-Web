@@ -1,6 +1,27 @@
 import React from "react";
 
 export default function Goals() {
+  const goals = [
+    {
+      title: "Innovate Startups",
+      description: "Launch multiple AI-driven startups and SaaS solutions.",
+    },
+    {
+      title: "Pioneer Technology",
+      description:
+        "Develop platforms for today&apos;s and tomorrow&apos;s challenges.",
+    },
+    {
+      title: "Boost Efficiency",
+      description: "Enhance business efficiency and customization.",
+    },
+    {
+      title: "Continuous Learning",
+      description:
+        "Remain committed to learning and hungry for new tech advancements.",
+    },
+  ];
+
   return (
     <section className="pt-10">
       <div className="overflow-x-hidden w-full">
@@ -9,31 +30,14 @@ export default function Goals() {
         </h2>
         <div>
           <ul className="list-disc">
-            <li>
-              <span className="font-semibold text-green-600 pr-2">
-                Innovate Startups:
-              </span>
-              Launch multiple AI-driven startups and SaaS solutions.
-            </li>
-            <li>
-              <span className="font-semibold text-green-600 pr-2">
-                Pioneer Technology:
-              </span>
-              Develop platforms for today&apos;s and tomorrow&apos;s challenges.
-            </li>
-
-            <li>
-              <span className="font-semibold text-green-600 pr-2">
-                Boost Efficiency:
-              </span>
-              Enhance business efficiency and customization.
-            </li>
-            <li>
-              <span className="font-semibold text-green-600 pr-2">
-                Continuous Learning:
-              </span>
-              Remain committed to learning and hungry for new tech advancements.
-            </li>
+            {goals.map((goal, index) => (
+              <li key={index}>
+                <span className="font-semibold text-green-800 darK:text-green-600 pr-2">
+                  {goal.title}:
+                </span>
+                {goal.description}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
