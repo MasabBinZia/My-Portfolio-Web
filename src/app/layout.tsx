@@ -46,10 +46,20 @@ export const metadata: Metadata = {
     default: "Masab Bin Zia - Modern Full-Stack Engineer",
     template: `%s | Masab Bin Zia`,
   },
+  description:
+    "I'm a Full Stack Developer with 3+ years of experience in Web3.0, specializing in scalable web applications, microservices, token-based RESTful API servers, and API-driven solutions.",
   openGraph: {
+    title: "Masab Bin Zia",
     description:
       "I'm a Full Stack Developer with 3+ years of experience in Web3.0, specializing in scalable web applications, microservices, token-based RESTful API servers, and API-driven solutions.",
-    images: [""],
+    url: "https://masab-mbz-portfolio.vercel.app",
+    siteName: "Masab Bin Zia",
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

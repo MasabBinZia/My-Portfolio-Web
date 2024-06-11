@@ -1,7 +1,6 @@
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/project-card";
-import { Button } from "@/components/ui/button";
 import { projects } from "@/data/config";
 import PdfDownloadButton from "@/components/pdf-download-btn";
 
@@ -17,9 +16,7 @@ export default function Projects() {
           <Tabs defaultValue="myproj" className="w-full">
             <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="myproj">My Projects</TabsTrigger>
-              <TabsTrigger value="workproj">
-                Work Projects
-              </TabsTrigger>
+              <TabsTrigger value="workproj">Work Projects</TabsTrigger>
             </TabsList>
             <TabsContent
               value="myproj"
@@ -51,10 +48,7 @@ export default function Projects() {
               ))}
             </TabsContent>
           </Tabs>
-          {/* <Button className="my-4 w-1/2" variant={"outline"} size={"lg"}>
-            View More
-          </Button> */}
-          <PdfDownloadButton/>
+          <PdfDownloadButton />
         </div>
       </div>
     </section>
