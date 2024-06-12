@@ -19,7 +19,7 @@ export default function Home() {
       <Skills />
       <Goals />
       <GitHubCalendarSection />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }

@@ -66,7 +66,7 @@ export function Header({ views }: { views: any }) {
         <h1 className="mt-5 mb-2">👋 Hey there! I&apos;m Masab Bin Zia.</h1>
         <p className="text-lg mb-2">Modern Full-Stack Engineer.</p>
         <p className="text-lg mb-2">
-          I’m currently learning Learning Full-stack, AI, Web3.0 & DevOps.
+          I’m currently learning Learning AI, Web3.0 & DevOps.
         </p>
         <p className="text">
           <span className="dark:text-foreground text-black font-semibold">

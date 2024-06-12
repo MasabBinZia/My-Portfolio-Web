@@ -29,10 +29,10 @@ const PdfDownloadButton = () => {
       document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
     } catch (error) {
-      toast("Error Downloading Portfolio PDF. Try Again!");
+      toast.error("Error Downloading Portfolio PDF. Try Again!");
     } finally {
       setLoading(false);
-      toast("Portfolio PDF Downloaded");
+      toast.success("Portfolio PDF Downloaded");
     }
   }, []);
 

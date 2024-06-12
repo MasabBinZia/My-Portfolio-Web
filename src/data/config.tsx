@@ -91,3 +91,36 @@ export const projects = {
     },
   ],
 };
+
+export const skills = [
+  {
+    category: "Programming Languages",
+    icons: "js,ts,cs,html,go,py,solidity,css&perline=6",
+  },
+  {
+    category: "Front-End Development",
+    icons: "react,next,astro,svelte,vite,vue&perline=6",
+  },
+  {
+    category: "Libraries",
+    icons:
+      "redux,bootstrap,tailwind,threejs,mui,sass,styledcomponents,tensorflow&perline=6",
+  },
+  {
+    category: "Back-End,Clouds,PaaS",
+    icons:
+      "supabase,prisma,firebase,aws,docker,heroku,express,vercel,fastapi,dotnet,nodejs,netlify,appwrite,gcp,kubernetes&perline=6",
+  },
+  {
+    category: "Database Management",
+    icons: "firebase,planetscale,postgres,mysql,mongo&perline=6",
+  },
+  {
+    category: "OS & Package Managers",
+    icons: "windows,linux,ubuntu,npm,yarn,pnpm,bun&perline=6",
+  },
+  {
+    category: "Design & Dev Tools",
+    icons: "figma,ps,notion,postman,vscode,visualstudio,svg,git&perline=6",
+  },
+];

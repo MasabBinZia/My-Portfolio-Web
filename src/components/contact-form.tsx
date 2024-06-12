@@ -24,14 +24,7 @@ import {
 } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
-
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "name must be at least 2 characters.",
-  }),
-  email: z.string().email(),
-  description: z.string().min(2).max(2000),
-});
+import { formSchema } from "@/lib/schema";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
@@ -64,18 +57,18 @@ const ContactForm = () => {
         publicKey as string
       )
       .then((response) => {
-        toast("Your message has been sent.");
+        toast.success("Your message has been sent.");
         form.reset();
         setIsSubmitting(false);
       })
       .catch((error) => {
-        toast("Uh oh! Something went wrong.");
+        toast.error("Uh oh! Something went wrong.");
         setIsSubmitting(false);
       });
   }
   return (
     <div className="">
-      <Card className="lg:w-[600px] ">
+      <Card className="border-none">
         <CardHeader>
           <CardTitle>Connect With Me By Filling The Form</CardTitle>
           <CardDescription className="text-xs">

@@ -69,7 +69,6 @@ body::-webkit-scrollbar {
   }
 }
 
-
 h1,
 h2,
 h3,
@@ -101,9 +100,8 @@ ul {
   list-style: decimal;
 }
 
-
 .landingSectionTitle::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 110%;
   right: 0px;
