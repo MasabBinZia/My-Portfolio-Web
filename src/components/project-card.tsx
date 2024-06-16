@@ -23,6 +23,7 @@ export default function ProjectCard({
   icons,
   projLink,
   githubLink,
+  more
 }: any) {
   return (
     <Card className="lg:w-[350px]">
@@ -31,7 +32,6 @@ export default function ProjectCard({
         <CardDescription className="dark:text-gray-400 text-gray-800">
           {desc}
         </CardDescription>
-
         <Separator className="my-4" />
       </CardHeader>
       <CardContent className="flex justify-center items-center gap-10">
@@ -50,7 +50,7 @@ export default function ProjectCard({
             <GitHubLogoIcon className="w-6 h-6" /> Github
           </Link>
         )}
-        <Link href={""}>More</Link>
+        <Link href={more}>More</Link>
       </CardContent>
     </Card>
   );

@@ -15,7 +15,7 @@ import {
 import Image from "next/image";
 import NavDock from "@/components/nav-dock";
 
-export function Header({ views }: { views: any }) {
+export function Hero({ views }: { views: any }) {
   const { setTheme } = useTheme();
 
   return (

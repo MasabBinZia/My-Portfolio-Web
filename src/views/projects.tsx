@@ -2,7 +2,8 @@ import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/project-card";
 import { projects } from "@/data/config";
-import PdfDownloadButton from "@/components/pdf-download-btn";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -30,6 +31,7 @@ export default function Projects() {
                   icons={proj.stack}
                   projLink={proj.link}
                   githubLink={proj.github}
+                  more={`/projects/${proj.slug}`}
                 />
               ))}
             </TabsContent>
@@ -44,11 +46,21 @@ export default function Projects() {
                   desc={proj.description}
                   icons={proj.stack}
                   projLink={proj.link}
+                  more={`/projects/${proj.slug}`}
                 />
               ))}
             </TabsContent>
           </Tabs>
-          <PdfDownloadButton />
+          {/* <PdfDownloadButton /> */}
+          <Link
+            href={"/projects"}
+            className={`${buttonVariants({
+              variant: "outline",
+              size: "lg",
+            })} my-4 w-1/2`}
+          >
+            View all
+          </Link>
         </div>
       </div>
     </section>

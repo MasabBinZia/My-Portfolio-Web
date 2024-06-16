@@ -15,6 +15,7 @@ export const projects = {
   Myprojects: [
     {
       title: "Dine Market",
+      slug: "dine-market",
       description:
         "Dine Market is an e-commerce project developed for the PIAIC hackathon.",
       link: "https://dine-market-ecommerce-web.vercel.app",
@@ -29,6 +30,7 @@ export const projects = {
     },
     {
       title: "Photo-Album-Cloudinary",
+      slug: "photo-album-cloudinary",
       description: "A cloud-based media management platform.",
       link: "https://photo-album-cloudinary.vercel.app",
       github: "https://github.com/MasabBinZia/Photo-Album-Cloudinary",
@@ -40,7 +42,8 @@ export const projects = {
       ],
     },
     {
-      title: "E-voting App",
+      title: "VotePulse E-voting App",
+      slug: "votepulse",
       description:
         "MERN Stack E-voting App. User can vote and Admin can see their votes.",
       link: "https://github.com/MasabBinZia/e-voting-app",
@@ -57,6 +60,8 @@ export const projects = {
   Clientprojects: [
     {
       title: "BITXCELS",
+      slug: "bitxcels",
+
       description: "Welcome to Bitxcels, where innovation meets excellence.",
       link: "https://bitxcels.com",
       stack: [
@@ -68,6 +73,8 @@ export const projects = {
     },
     {
       title: "Sheep2mint",
+      slug: "sheep2mint",
+
       description:
         "Fix existing UI, create new UI components and created Profile Page.",
       link: "https://sheep2mint.com",
@@ -80,6 +87,7 @@ export const projects = {
     },
     {
       title: "SuperFood NFT Frontend",
+      slug: "super-food-nft",
       description: "Fix and update UI and added UI components.",
       link: "http://few-control.surge.sh/",
       stack: [
