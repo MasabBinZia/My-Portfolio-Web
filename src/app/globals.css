@@ -6,6 +6,9 @@ html,
 body {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background-image: url("../../public/noise.png");
+  background-size: 200px 200px;
+  background-position: 0 0;
 }
 
 html::-webkit-scrollbar,
