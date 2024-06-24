@@ -30,12 +30,10 @@ export default function PageHeader({ link, title, desc }: PageHeaderProps) {
         </svg>
         <span className="text-secondaryDarker">Back</span>
       </Link>
-      <h1 className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max">
+      <h1 className="landingSectionTitle max-w-max mx-0 text-left text-3xl relative mb-4 md:w-max">
         {title}
       </h1>
-      <p className="text-lg">
-        {desc}
-      </p>
+      <p className="text-lg">{desc}</p>
     </section>
   );
 }

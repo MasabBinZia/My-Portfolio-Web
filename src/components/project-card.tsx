@@ -10,11 +10,6 @@ import { LinkPreview } from "./ui/link-preview";
 import Link from "next/link";
 import { Link2 } from "lucide-react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { SiTypescript } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiReact } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
-import { SiRedux } from "react-icons/si";
 import { Separator } from "./ui/separator";
 
 export default function ProjectCard({
@@ -23,7 +18,7 @@ export default function ProjectCard({
   icons,
   projLink,
   githubLink,
-  more
+  more,
 }: any) {
   return (
     <Card className="lg:w-[350px]">
@@ -34,23 +29,34 @@ export default function ProjectCard({
         </CardDescription>
         <Separator className="my-4" />
       </CardHeader>
-      <CardContent className="flex justify-center items-center gap-10">
-        <LinkPreview
-          url={projLink}
-          className="font-bold flex justify-center items-center gap-1"
-        >
-          <Link2 className="w-6 h-6" />
-          Link
-        </LinkPreview>
-        {githubLink && (
-          <Link
-            href={githubLink}
-            className="flex justify-center items-center gap-1"
+      <CardContent>
+        <div className="flex justify-center items-center gap-2">
+          {icons.slice(0, 5).map((icon: any, index: any) => (
+            <span key={index}>{icon.element}</span>
+          ))}
+        </div>
+        <Separator className="my-4" />
+        <div className="flex justify-center items-center gap-10">
+          <LinkPreview
+            url={projLink}
+            className="font-bold flex justify-center items-center gap-1"
           >
-            <GitHubLogoIcon className="w-6 h-6" /> Github
-          </Link>
-        )}
-        <Link href={more}>More</Link>
+            <Link2 className="w-6 h-6" />
+            Link
+          </LinkPreview>
+          {githubLink ? (
+            <Link
+              href={githubLink}
+              target="_blank"
+              className="flex justify-center items-center gap-1"
+            >
+              <GitHubLogoIcon className="w-6 h-6" /> Github
+            </Link>
+          ) : (
+            <></>
+          )}
+          <Link href={more}>More</Link>
+        </div>
       </CardContent>
     </Card>
   );

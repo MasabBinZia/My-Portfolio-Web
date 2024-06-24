@@ -23,7 +23,7 @@ export default function Projects() {
               value="myproj"
               className="grid md:grid-cols-2 gap-2 lg:grid-cols-2"
             >
-              {projects.Myprojects.map((proj, index) => (
+              {projects.Myprojects.slice(0, 3).map((proj, index) => (
                 <ProjectCard
                   key={index}
                   title={proj.title}
@@ -39,7 +39,7 @@ export default function Projects() {
               value="workproj"
               className="grid md:grid-cols-2 gap-2 lg:grid-cols-2"
             >
-              {projects.Clientprojects.map((proj, index) => (
+              {projects.Myprojects.slice(3, 7).map((proj, index) => (
                 <ProjectCard
                   key={index}
                   title={proj.title}
