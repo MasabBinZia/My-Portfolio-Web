@@ -6,6 +6,7 @@ import Skills from "@/views/skills";
 import { Redis } from "@upstash/redis";
 import PageLayout from "@/components/page-layout";
 import { Hero } from "@/views/hero";
+import Footer from "@/views/footer";
 
 const redis = Redis.fromEnv();
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Skills />
       <Goals />
       <GitHubCalendarSection />
+      <Footer />
     </PageLayout>
   );
 }
