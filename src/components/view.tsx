@@ -7,8 +7,7 @@ export function ReportView() {
     const postView = async () => {
       try {
         await axios.post("/api/views");
-      } catch (error) {
-      }
+      } catch (error) {}
     };
 
     postView();

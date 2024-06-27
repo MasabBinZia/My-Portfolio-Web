@@ -23,16 +23,7 @@ export default function page() {
             more={`/projects/${proj.slug}`}
           />
         ))}
-        {projects.Clientprojects.map((proj, index) => (
-          <ProjectCard
-            key={index}
-            title={proj.title}
-            desc={proj.description}
-            icons={proj.stack}
-            projLink={proj.link}
-            more={`/projects/${proj.slug}`}
-          />
-        ))}
+    
       </section>
     </PageLayout>
   );

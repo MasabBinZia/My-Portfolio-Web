@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "@/data/config";
+import { myProcess, projects } from "@/data/config";
 import PageHeader from "@/components/page-header";
 import PageLayout from "@/components/page-layout";
+import NoImg from "../../../../public/noImgPlaceholder.webp"
 
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
@@ -43,7 +44,7 @@ export default function page({ params }: { params: { slug: string } }) {
       <PageHeader title={project.title} desc="" link="/projects" />
       <div className="flex flex-wrap justify-center items-center">
         <Image
-          src={project.image || ""}
+          src={project.image || NoImg}
           placeholder="blur"
           alt={project.title}
           className="rounded-3xl"
@@ -91,7 +92,10 @@ export default function page({ params }: { params: { slug: string } }) {
           {project.stack.map((item, index) => (
             <TooltipProvider key={index} delayDuration={200}>
               <Tooltip>
-                <TooltipTrigger asChild className="hover:text-foreground">
+                <TooltipTrigger
+                  asChild
+                  className="hover:text-foreground cursor-pointer"
+                >
                   {item.element}
                 </TooltipTrigger>
                 <TooltipContent>{item.key.toUpperCase()}</TooltipContent>
@@ -107,7 +111,7 @@ export default function page({ params }: { params: { slug: string } }) {
       <div className="my-12">
         <h2 className="text-xl">My Process</h2>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 items-center my-6 px-10">
-          {project.myProcess.map((step, index) => (
+          {myProcess.map((step, index) => (
             <div
               key={index}
               className="flex flex-col justify-center items-center"
