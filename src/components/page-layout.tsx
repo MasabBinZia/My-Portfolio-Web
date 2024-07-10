@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function PageLayout({
   children,
@@ -6,6 +6,6 @@ export default function PageLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="p-6 lg:p-20 max-w-4xl m-auto w-full">{children}</main>
+    <main className="m-auto w-full max-w-4xl p-6 lg:p-20">{children}</main>
   );
 }

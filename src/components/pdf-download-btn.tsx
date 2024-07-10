@@ -1,8 +1,8 @@
-"use client";
-import React, { useState, useCallback } from "react";
-import { Button } from "./ui/button";
-import { LoaderCircle } from "lucide-react";
-import { toast } from "sonner";
+'use client';
+import React, { useState, useCallback } from 'react';
+import { Button } from './ui/button';
+import { LoaderCircle } from 'lucide-react';
+import { toast } from 'sonner';
 
 const PdfDownloadButton = () => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -10,7 +10,7 @@ const PdfDownloadButton = () => {
   const handleDownloadClick = useCallback(async () => {
     setLoading(true);
 
-    const pdfUrl = "/PORTFOLIO.pdf";
+    const pdfUrl = '/PORTFOLIO.pdf';
 
     try {
       const response = await fetch(pdfUrl);
@@ -21,18 +21,18 @@ const PdfDownloadButton = () => {
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
 
-      const a = document.createElement("a");
+      const a = document.createElement('a');
       a.href = url;
-      a.download = "PORTFOLIO.pdf";
+      a.download = 'PORTFOLIO.pdf';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
     } catch (error) {
-      toast.error("Error Downloading Portfolio PDF. Try Again!");
+      toast.error('Error Downloading Portfolio PDF. Try Again!');
     } finally {
       setLoading(false);
-      toast.success("Portfolio PDF Downloaded");
+      toast.success('Portfolio PDF Downloaded');
     }
   }, []);
 
@@ -44,7 +44,7 @@ const PdfDownloadButton = () => {
       size="lg"
       disabled={loading}
     >
-      {loading ? <LoaderCircle className="animate-spin" /> : "View More"}
+      {loading ? <LoaderCircle className="animate-spin" /> : 'View More'}
     </Button>
   );
 };

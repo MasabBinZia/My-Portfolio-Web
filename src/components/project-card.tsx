@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./ui/card";
-import { LinkPreview } from "./ui/link-preview";
-import Link from "next/link";
-import { Link2 } from "lucide-react";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { Separator } from "./ui/separator";
+} from './ui/card';
+import { LinkPreview } from './ui/link-preview';
+import Link from 'next/link';
+import { Link2 } from 'lucide-react';
+import { GitHubLogoIcon } from '@radix-ui/react-icons';
+import { Separator } from './ui/separator';
 
 export default function ProjectCard({
   title,
@@ -24,33 +24,33 @@ export default function ProjectCard({
     <Card className="lg:w-[350px]">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
-        <CardDescription className="dark:text-gray-400 text-gray-800">
+        <CardDescription className="text-gray-800 dark:text-gray-400">
           {desc}
         </CardDescription>
         <Separator className="my-4" />
       </CardHeader>
       <CardContent>
-        <div className="flex justify-center items-center gap-2">
+        <div className="flex items-center justify-center gap-2">
           {icons.slice(0, 5).map((icon: any, index: any) => (
             <span key={index}>{icon.element}</span>
           ))}
         </div>
         <Separator className="my-4" />
-        <div className="flex justify-center items-center gap-10">
+        <div className="flex items-center justify-center gap-10">
           <LinkPreview
             url={projLink}
-            className="font-bold flex justify-center items-center gap-1"
+            className="flex items-center justify-center gap-1 font-bold"
           >
-            <Link2 className="w-6 h-6" />
+            <Link2 className="h-6 w-6" />
             Link
           </LinkPreview>
           {githubLink ? (
             <Link
               href={githubLink}
               target="_blank"
-              className="flex justify-center items-center gap-1"
+              className="flex items-center justify-center gap-1"
             >
-              <GitHubLogoIcon className="w-6 h-6" /> Github
+              <GitHubLogoIcon className="h-6 w-6" /> Github
             </Link>
           ) : (
             <></>

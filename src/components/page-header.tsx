@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 type PageHeaderProps = {
   link: string;
@@ -9,17 +9,17 @@ type PageHeaderProps = {
 
 export default function PageHeader({ link, title, desc }: PageHeaderProps) {
   return (
-    <section className="overflow-x-hidden w-full">
+    <section className="w-full overflow-x-hidden">
       <Link
         href={link}
-        className="flex flex-row space-x-2 items-center md:px-2 group cursor-pointer mb-4 animate-slide-from-down-and-fade-1"
+        className="animate-slide-from-down-and-fade-1 group mb-4 flex cursor-pointer flex-row items-center space-x-2 md:px-2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
           viewBox="0 0 16 16"
-          className="text-secondaryDarker group-hover:-translate-x-1 duration-200 rotate-180"
+          className="text-secondaryDarker rotate-180 duration-200 group-hover:-translate-x-1"
         >
           <path
             fill="currentColor"
@@ -30,7 +30,7 @@ export default function PageHeader({ link, title, desc }: PageHeaderProps) {
         </svg>
         <span className="text-secondaryDarker">Back</span>
       </Link>
-      <h1 className="landingSectionTitle max-w-max mx-0 text-left text-3xl relative mb-4 md:w-max">
+      <h1 className="landingSectionTitle relative mx-0 mb-4 max-w-max text-left text-3xl md:w-max">
         {title}
       </h1>
       <p className="text-lg">{desc}</p>

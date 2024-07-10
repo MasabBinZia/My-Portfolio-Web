@@ -1,19 +1,19 @@
-import React from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import ProjectCard from "@/components/project-card";
-import { projects } from "@/data/config";
-import { buttonVariants } from "@/components/ui/button";
-import Link from "next/link";
+import React from 'react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import ProjectCard from '@/components/project-card';
+import { projects } from '@/data/config';
+import { buttonVariants } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Projects() {
   return (
     <section>
-      <div className="overflow-x-hidden w-full">
-        <h2 className="landingSectionTitle max-w-max mx-0 text-left relative mb-4 md:w-max">
+      <div className="w-full overflow-x-hidden">
+        <h2 className="landingSectionTitle relative mx-0 mb-4 max-w-max text-left md:w-max">
           {projects.title}
         </h2>
         <p className="text-lg">{projects.desc}</p>
-        <div className="flex flex-col justify-center items-center mt-4">
+        <div className="mt-4 flex flex-col items-center justify-center">
           <Tabs defaultValue="myproj" className="w-full">
             <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="myproj">My Projects</TabsTrigger>
@@ -21,7 +21,7 @@ export default function Projects() {
             </TabsList>
             <TabsContent
               value="myproj"
-              className="grid md:grid-cols-2 gap-2 lg:grid-cols-2"
+              className="grid gap-2 md:grid-cols-2 lg:grid-cols-2"
             >
               {projects.Myprojects.slice(0, 3).map((proj, index) => (
                 <ProjectCard
@@ -37,7 +37,7 @@ export default function Projects() {
             </TabsContent>
             <TabsContent
               value="workproj"
-              className="grid md:grid-cols-2 gap-2 lg:grid-cols-2"
+              className="grid gap-2 md:grid-cols-2 lg:grid-cols-2"
             >
               {projects.Myprojects.slice(3, 7).map((proj, index) => (
                 <ProjectCard
@@ -53,10 +53,10 @@ export default function Projects() {
           </Tabs>
           {/* <PdfDownloadButton /> */}
           <Link
-            href={"/projects"}
+            href={'/projects'}
             className={`${buttonVariants({
-              variant: "outline",
-              size: "lg",
+              variant: 'outline',
+              size: 'lg',
             })} my-4 w-1/2`}
           >
             View all

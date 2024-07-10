@@ -1,20 +1,20 @@
-import { NextRequest, NextResponse } from "next/server";
-import { Redis } from "@upstash/redis";
+import { NextRequest, NextResponse } from 'next/server';
+import { Redis } from '@upstash/redis';
 
 const redis = Redis.fromEnv();
-export const runtime = "edge";
+export const runtime = 'edge';
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
-  const ip = req.headers.get("x-forwarded-for") || req.ip;
+  const ip = req.headers.get('x-forwarded-for') || req.ip;
 
   if (ip) {
     const buf = await crypto.subtle.digest(
-      "SHA-256",
-      new TextEncoder().encode(ip)
+      'SHA-256',
+      new TextEncoder().encode(ip),
     );
     const hash = Array.from(new Uint8Array(buf))
-      .map((b) => b.toString(16).padStart(2, "0"))
-      .join("");
+      .map((b) => b.toString(16).padStart(2, '0'))
+      .join('');
 
     const key = `deduplicate:${hash}`;
 
@@ -28,6 +28,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     }
   }
 
-  await redis.incr("pageviews");
+  await redis.incr('pageviews');
   return new NextResponse(null, { status: 202 });
 }

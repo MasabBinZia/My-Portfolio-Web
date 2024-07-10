@@ -1,11 +1,11 @@
-"use client";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
-import { Button } from "@/components/ui/button";
-import emailjs from "@emailjs/browser";
-import { toast } from "sonner";
-import { LoaderCircle } from "lucide-react";
+'use client';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+import { Button } from '@/components/ui/button';
+import emailjs from '@emailjs/browser';
+import { toast } from 'sonner';
+import { LoaderCircle } from 'lucide-react';
 import {
   Form,
   FormControl,
@@ -13,27 +13,27 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
-import { formSchema } from "@/lib/schema";
+} from '@/components/ui/card';
+import { Textarea } from '@/components/ui/textarea';
+import { useState } from 'react';
+import { formSchema } from '@/lib/schema';
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
-      email: "",
-      description: "",
+      name: '',
+      email: '',
+      description: '',
     },
   });
   function onSubmit(values: z.infer<typeof formSchema>, e: any) {
@@ -54,15 +54,15 @@ const ContactForm = () => {
         serviceId as string,
         templateId as string,
         templateParams,
-        publicKey as string
+        publicKey as string,
       )
       .then((response) => {
-        toast.success("Your message has been sent.");
+        toast.success('Your message has been sent.');
         form.reset();
         setIsSubmitting(false);
       })
       .catch((error) => {
-        toast.error("Uh oh! Something went wrong.");
+        toast.error('Uh oh! Something went wrong.');
         setIsSubmitting(false);
       });
   }
@@ -80,7 +80,7 @@ const ContactForm = () => {
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className="space-y-8 flex flex-col "
+              className="flex flex-col space-y-8"
             >
               <FormField
                 control={form.control}
@@ -130,7 +130,7 @@ const ContactForm = () => {
                 {isSubmitting ? (
                   <LoaderCircle className="animate-spin" />
                 ) : (
-                  "Send Message"
+                  'Send Message'
                 )}
               </Button>
             </form>

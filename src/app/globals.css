@@ -6,7 +6,7 @@ html,
 body {
   scrollbar-width: none;
   -ms-overflow-style: none;
-  background-image: url("../../public/noise.png");
+  background-image: url('../../public/noise.png');
   background-size: 200px 200px;
   background-position: 0 0;
 }
@@ -68,7 +68,7 @@ body::-webkit-scrollbar {
     @apply border-border;
   }
   body {
-    @apply bg-background dark:text-gray-400 text-gray-800;
+    @apply bg-background text-gray-800 dark:text-gray-400;
   }
 }
 
@@ -78,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply dark:text-foreground text-black font-bold transition-colors duration-500;
+  @apply font-bold text-black transition-colors duration-500 dark:text-foreground;
 }
 
 h1 {
@@ -104,7 +104,7 @@ ul {
 }
 
 .landingSectionTitle::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 110%;
   right: 0px;
@@ -112,5 +112,5 @@ ul {
   transform: translateY(-50%);
   height: 1px;
   width: 100vw;
-  @apply dark:text-gray-400 text-gray-800;
+  @apply text-gray-800 dark:text-gray-400;
 }
