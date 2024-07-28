@@ -20,7 +20,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Goals />
-      <Activity />
+      {/* <Activity /> */}
       <GitHubCalendarSection />
       <Footer />
     </PageLayout>

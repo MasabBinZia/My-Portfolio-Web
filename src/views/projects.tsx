@@ -1,9 +1,9 @@
-import React from 'react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import ProjectCard from '@/components/project-card';
-import { projects } from '@/data/config';
-import { buttonVariants } from '@/components/ui/button';
-import Link from 'next/link';
+import React from "react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import ProjectCard from "@/components/project-card";
+import { projects } from "@/data/config";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -21,9 +21,9 @@ export default function Projects() {
             </TabsList>
             <TabsContent
               value="myproj"
-              className="grid gap-2 md:grid-cols-2 lg:grid-cols-2"
+              className="flex flex-col justify-center items-center gap-2"
             >
-              {projects.Myprojects.slice(0, 3).map((proj, index) => (
+              {projects.Myprojects.slice(0, 4).map((proj, index) => (
                 <ProjectCard
                   key={index}
                   title={proj.title}
@@ -37,9 +37,9 @@ export default function Projects() {
             </TabsContent>
             <TabsContent
               value="workproj"
-              className="grid gap-2 md:grid-cols-2 lg:grid-cols-2"
+              className="flex flex-col justify-center items-center gap-2"
             >
-              {projects.Myprojects.slice(3, 7).map((proj, index) => (
+              {projects.Myprojects.slice(4, 8).map((proj, index) => (
                 <ProjectCard
                   key={index}
                   title={proj.title}
@@ -51,12 +51,11 @@ export default function Projects() {
               ))}
             </TabsContent>
           </Tabs>
-          {/* <PdfDownloadButton /> */}
           <Link
-            href={'/projects'}
+            href={"/projects"}
             className={`${buttonVariants({
-              variant: 'outline',
-              size: 'lg',
+              variant: "outline",
+              size: "lg",
             })} my-4 w-1/2`}
           >
             View all

@@ -1,23 +1,23 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { myProcess, projects } from '@/data/config';
-import PageHeader from '@/components/page-header';
-import PageLayout from '@/components/page-layout';
-import NoImg from '../../../../public/noImgPlaceholder.webp';
+import Image from "next/image";
+import Link from "next/link";
+import { myProcess, projects } from "@/data/config";
+import PageHeader from "@/components/page-header";
+import PageLayout from "@/components/page-layout";
+import NoImg from "../../../../public/noImgPlaceholder.webp";
 
-import { Button, buttonVariants } from '@/components/ui/button';
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip';
+} from "@/components/ui/tooltip";
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
+} from "@/components/ui/card";
 
 export default function page({ params }: { params: { slug: string } }) {
   const { slug } = params;
@@ -31,7 +31,7 @@ export default function page({ params }: { params: { slug: string } }) {
         <Link
           href="/"
           className={`${buttonVariants({
-            variant: 'link',
+            variant: "link",
           })} my-4 hover:text-foreground`}
         >
           Back to Home
@@ -48,8 +48,8 @@ export default function page({ params }: { params: { slug: string } }) {
           placeholder="blur"
           alt={project.title}
           className="rounded-3xl"
-          width={'1000'}
-          height={'1000'}
+          width={"1000"}
+          height={"1000"}
         />
         <div className="my-10 flex justify-center gap-10">
           <Link
@@ -72,7 +72,7 @@ export default function page({ params }: { params: { slug: string } }) {
           )}
         </div>
       </div>
-      <div className="my-12 flex items-center justify-between gap-6">
+      {/* <div className="my-12 flex items-center justify-between gap-6">
         <div>
           <h2 className="text-xl">My Role</h2>
           <p>Software Engineer</p>
@@ -85,7 +85,7 @@ export default function page({ params }: { params: { slug: string } }) {
           <h2 className="text-xl">End Date</h2>
           <p>20/08/2022</p>
         </div>
-      </div>
+      </div> */}
       <div className="my-12">
         <h2 className="text-xl">Tech Stack</h2>
         <div className="my-4 flex flex-wrap gap-6">
@@ -117,7 +117,7 @@ export default function page({ params }: { params: { slug: string } }) {
               className="flex flex-col items-center justify-center"
             >
               <Button
-                variant={'outline'}
+                variant={"outline"}
                 className="flex h-24 w-24 items-center justify-center rounded-full"
               >
                 {step.icon}

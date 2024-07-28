@@ -68,7 +68,7 @@ const ContactForm = () => {
   }
   return (
     <div className="">
-      <Card className="border-none">
+      <Card className="border-none shadow-none">
         <CardHeader>
           <CardTitle>Connect With Me By Filling The Form</CardTitle>
           <CardDescription className="text-xs">

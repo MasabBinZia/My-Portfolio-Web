@@ -11,7 +11,7 @@ export default function page() {
         desc="Below is a showcase of the projects I have worked on to date."
         link="/"
       />
-      <section className="grid gap-2 py-6 md:grid-cols-2 lg:grid-cols-2">
+      <section className="flex flex-col justify-center items-center gap-2">
         {projects.Myprojects.map((proj, index) => (
           <ProjectCard
             key={index}
