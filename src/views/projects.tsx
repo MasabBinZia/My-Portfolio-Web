@@ -28,7 +28,7 @@ export default function Projects() {
                   key={index}
                   title={proj.title}
                   desc={proj.description}
-                  icons={proj.stack}
+                  icon={proj.icon}
                   projLink={proj.link}
                   githubLink={proj.github}
                   more={`/projects/${proj.slug}`}
@@ -44,7 +44,7 @@ export default function Projects() {
                   key={index}
                   title={proj.title}
                   desc={proj.description}
-                  icons={proj.stack}
+                  icon={proj.icon}
                   projLink={proj.link}
                   more={`/projects/${proj.slug}`}
                 />

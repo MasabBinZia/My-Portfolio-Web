@@ -1,7 +1,7 @@
-import PageHeader from '@/components/page-header';
-import PageLayout from '@/components/page-layout';
-import ProjectCard from '@/components/project-card';
-import { projects } from '@/data/config';
+import PageHeader from "@/components/page-header";
+import PageLayout from "@/components/page-layout";
+import ProjectCard from "@/components/project-card";
+import { projects } from "@/data/config";
 
 export default function page() {
   return (
@@ -17,7 +17,7 @@ export default function page() {
             key={index}
             title={proj.title}
             desc={proj.description}
-            icons={proj.stack}
+            icon={proj.icon}
             projLink={proj.link}
             githubLink={proj.github}
             more={`/projects/${proj.slug}`}

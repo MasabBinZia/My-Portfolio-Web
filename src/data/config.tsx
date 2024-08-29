@@ -61,6 +61,7 @@ export const projects = {
         "Dine Market is an e-commerce project developed for the PIAIC hackathon.",
       link: "https://dine-market-ecommerce-web.vercel.app",
       github: "https://github.com/MasabBinZia/DineMarket-Ecommerce-web ",
+      icon:"/icons/dinemarket.png" ,
       stack: [
         { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
@@ -103,6 +104,7 @@ export const projects = {
         "The Photos App is a web application , a cloud-based media management platform.",
       link: "https://photo-album-cloudinary.vercel.app",
       github: "https://github.com/MasabBinZia/Photo-Album-Cloudinary",
+      icon:"/icons/photoapp.png" ,
       stack: [
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
         { key: "react", element: <SiReact className="h-8 w-8" /> },
@@ -137,6 +139,7 @@ export const projects = {
         "MERN Stack E-voting App. User can vote and Admin can see their votes.",
       link: "https://github.com/MasabBinZia/e-voting-app",
       github: "https://github.com/MasabBinZia/e-voting-app",
+      icon:"/icons/votepulse.png" ,
       stack: [
         { key: "mongodb", element: <DiMongodb className="h-8 w-8" /> },
         { key: "expressjs", element: <SiExpress className="h-8 w-8" /> },
@@ -177,6 +180,7 @@ export const projects = {
         "Effortlessly Summarize Articles with Cutting-Edge AI Technology. Get the Key Points in Seconds!",
       link: "https://summa-ai.vercel.app",
       github: "https://github.com/MasabBinZia/SummaAI",
+      icon:"/icons/summaai.png" ,
       stack: [
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
         { key: "react", element: <SiReact className="h-8 w-8" /> },
@@ -218,6 +222,7 @@ export const projects = {
       image: bitxcles,
       description: "Welcome to Bitxcels, where innovation meets excellence.",
       link: "https://bitxcels.com",
+      icon:"/icons/no-img.png" ,
       stack: [
         { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
@@ -251,6 +256,7 @@ export const projects = {
       description:
         "Web 3.0 platform to mint horses genetics data as NFTs & can download them.",
       link: "https://horselyworld.com",
+      icon:"/icons/horsely.png" ,
       stack: [
         { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
@@ -291,6 +297,7 @@ export const projects = {
       image: chainverse,
       description: "Engaging static web application of ChainVerse Lab.",
       link: "https://chainvese-website.vercel.app",
+      icon:"/icons/no-img.png" ,
       stack: [
         { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
@@ -333,6 +340,7 @@ export const projects = {
       description:
         "Enhancing the frontend using Bootstrap, ReactJS, Ethers JS, Firebase, and Wagmi.",
       link: "https://multisheapmint.web.app",
+      icon:"/icons/sheep2mint.png" ,
       stack: [
         { key: "react", element: <SiReact className="h-8 w-8" /> },
         { key: "firebase", element: <RiFirebaseFill className="h-8 w-8" /> },
@@ -381,6 +389,7 @@ export const projects = {
       description:
         "Enhance the UI/UX by adding ui components into existing MotorMods site.",
       link: "https://motor-mods.com",
+      icon:"/icons/motormods.png" ,
       stack: [
         { key: "react", element: <SiReact className="h-8 w-8" /> },
         { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
