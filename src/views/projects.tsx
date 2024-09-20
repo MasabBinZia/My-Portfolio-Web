@@ -32,6 +32,7 @@ export default function Projects() {
                   projLink={proj.link}
                   githubLink={proj.github}
                   more={`/projects/${proj.slug}`}
+                  cardType="featured"
                 />
               ))}
             </TabsContent>
@@ -47,6 +48,7 @@ export default function Projects() {
                   icon={proj.icon}
                   projLink={proj.link}
                   more={`/projects/${proj.slug}`}
+                  cardType="featured"
                 />
               ))}
             </TabsContent>

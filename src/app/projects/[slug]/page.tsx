@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 import { myProcess, projects } from "@/data/config";
 import PageHeader from "@/components/page-header";
 import PageLayout from "@/components/page-layout";
 import NoImg from "../../../../public/noImgPlaceholder.webp";
-
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Tooltip,
@@ -19,9 +19,30 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export default function page({ params }: { params: { slug: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
   const { slug } = params;
+  const project = projects.Myprojects.find((project) => project.slug === slug);
+  if (!project) {
+    return {
+      title: "Project Not Found",
+    };
+  }
+  return {
+    title: project.title,
+    description: project.caseStudy,
+    openGraph: {
+      title: project.title,
+      description: project.caseStudy,
+    },
+  };
+}
 
+export default async function Page({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const project = projects.Myprojects.find((project) => project.slug === slug);
 
   if (!project) {
@@ -39,6 +60,7 @@ export default function page({ params }: { params: { slug: string } }) {
       </div>
     );
   }
+
   return (
     <PageLayout>
       <PageHeader title={project.title} desc="" link="/projects" />
@@ -72,20 +94,6 @@ export default function page({ params }: { params: { slug: string } }) {
           )}
         </div>
       </div>
-      {/* <div className="my-12 flex items-center justify-between gap-6">
-        <div>
-          <h2 className="text-xl">My Role</h2>
-          <p>Software Engineer</p>
-        </div>
-        <div>
-          <h2 className="text-xl">Start Date</h2>
-          <p>10/08/2022</p>
-        </div>
-        <div>
-          <h2 className="text-xl">End Date</h2>
-          <p>20/08/2022</p>
-        </div>
-      </div> */}
       <div className="my-12">
         <h2 className="text-xl">Tech Stack</h2>
         <div className="my-4 flex flex-wrap gap-6">

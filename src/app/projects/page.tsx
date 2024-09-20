@@ -21,6 +21,8 @@ export default function page() {
             projLink={proj.link}
             githubLink={proj.github}
             more={`/projects/${proj.slug}`}
+            isPersonalProject={proj.isPersonalProject || false}
+            cardType="normal"
           />
         ))}
       </section>

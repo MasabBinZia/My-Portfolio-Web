@@ -7,7 +7,6 @@ import ProgressBar from "@/components/progress-bar";
 import { Toaster } from "@/components/ui/sonner";
 import ContactPopOver from "@/components/contact-pop-over";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import CanvasCursor from "@/components/canvas-cursor";
 import { metadata as generatedMetadata } from "@/data/meta-data";
 
 const vite = Vite({ subsets: ["latin"], weight: "400" });
@@ -40,7 +39,6 @@ export default function RootLayout({
           <SmoothScrolling>
             <ProgressBar />
             {children}
-            <CanvasCursor />
             <Toaster position="top-center" expand={true} />
             <ContactPopOver />
           </SmoothScrolling>

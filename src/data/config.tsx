@@ -16,6 +16,8 @@ import {
   SiEthers,
   SiVite,
   SiClerk,
+  SiSanity,
+  SiContentful,
 } from "react-icons/si";
 import {
   TbBrandNextjs,
@@ -28,6 +30,8 @@ import { IoLogoNodejs } from "react-icons/io5";
 import { FaAws, FaFigma } from "react-icons/fa6";
 import { FaHardHat } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { GiSpring } from "react-icons/gi";
+
 
 import {
   Code,
@@ -47,6 +51,8 @@ import chainverse from "../../public/projects/chainverse.jpg";
 import sheep2mint from "../../public/projects/sheep2mint.jpg";
 import motorMods from "../../public/projects/motormods.jpg";
 import summaai from "../../public/projects/summaai.jpg";
+import EAH from "../../public/projects/eliteacc.jpg";
+import trumed from "../../public/projects/trumed.jpg";
 
 export const projects = {
   title: "Projects",
@@ -56,6 +62,8 @@ export const projects = {
       title: "Dine Market",
       slug: "dine-market",
       image: dinemarket,
+      isPersonalProject: true,
+
 
       description:
         "Dine Market is an e-commerce project developed for the PIAIC hackathon.",
@@ -100,6 +108,8 @@ export const projects = {
       title: "Photos App",
       slug: "photos-app",
       image: photosapp,
+      isPersonalProject: true,
+
       description:
         "The Photos App is a web application , a cloud-based media management platform.",
       link: "https://photo-album-cloudinary.vercel.app",
@@ -135,6 +145,8 @@ export const projects = {
       title: "VotePulse E-voting App",
       slug: "votepulse",
       image: votepulse,
+      isPersonalProject: true,
+
       description:
         "MERN Stack E-voting App. User can vote and Admin can see their votes.",
       link: "https://github.com/MasabBinZia/e-voting-app",
@@ -176,6 +188,8 @@ export const projects = {
       title: "SummaAI",
       slug: "summaai",
       image: summaai,
+      isPersonalProject: true,
+
       description:
         "Effortlessly Summarize Articles with Cutting-Edge AI Technology. Get the Key Points in Seconds!",
       link: "https://summa-ai.vercel.app",
@@ -216,39 +230,35 @@ export const projects = {
     },
 
     //client project
-    {
-      title: "BITXCELS",
-      slug: "bitxcels",
-      image: bitxcles,
-      description: "Welcome to Bitxcels, where innovation meets excellence.",
-      link: "https://bitxcels.com",
-      icon:"/icons/no-img.png" ,
-      stack: [
-        { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
-        { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
-        { key: "react", element: <SiReact className="h-8 w-8" /> },
-        { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
-      ],
-      caseStudy:
-        "In this project, my role as a Modern Full-Stack Developer centered around creating a fully responsive, intuitive UI design for a website utilizing Next.js 13, JavaScript, Framer Motion, Email JS, and Tailwind CSS. The process encompassed planning and design with a focus on responsive layouts, seamless navigation and user flow, and ensuring typography and readability are optimized for all devices. I employed a component-based approach to structure the site, integrating animations and interactions for a dynamic user experience. Performance optimization, accessibility, thorough testing and debugging, comprehensive documentation, and a commitment to continuous improvement were key aspects of my development strategy.",
 
-      challenges: [
-        { desc: "Creating a fully responsive and intuitive UI design." },
-        { desc: "Ensuring seamless navigation and user flow." },
-        { desc: "Optimizing typography and readability across all devices." },
+    {
+      "title": "Elite Accounting Hub",
+      "slug": "elite-accounting-hub",
+      "image": EAH,
+      "description": "Elite Accounting Hub offers comprehensive accounting, finance, and tax services for US and Canadian clients.",
+      "link": "https://eliteaccountinghub.com",
+      "icon": "/icons/EAH.png",
+      "stack": [
+        { "key": "nextjs", "element": <TbBrandNextjs className="h-8 w-8" /> },
+        { "key": "typescript", "element": <SiTypescript className="h-8 w-8" /> },
+        { "key": "shadcn", "element": <SiShadcnui className="h-8 w-8" /> },
+        { "key": "tailwindcss", "element": <SiTailwindcss className="h-8 w-8" /> },
+        { "key": "sanity", "element": <SiSanity className="h-8 w-8" /> },
+        { "key": "emailjs", "element": <MdEmail className="h-8 w-8" /> }
       ],
-      learnings: [
-        {
-          desc: "Improved skills in using Next.js and JavaScript for responsive design.",
-        },
-        {
-          desc: "Gained experience in using Framer Motion for animations and interactions.",
-        },
-        {
-          desc: "Enhanced understanding of performance optimization and accessibility best practices.",
-        },
+      "caseStudy": "In this project, my role as a Modern Full-Stack Developer focused on building a marketing website for Elite Accounting Hub using Next.js 13, TypeScript, ShadCN, and Tailwind CSS. I integrated Sanity as the CMS for content management and utilized EmailJS for communication services. Key tasks included creating responsive layouts, optimizing SEO to increase client acquisition, and delivering a smooth and user-friendly experience. By combining design, performance optimization, and content management, I ensured the website effectively communicates the value of Elite Accounting Hub's services.",
+      
+      "challenges": [
+        { "desc": "Building a responsive and visually appealing marketing site." },
+        { "desc": "Incorporating SEO best practices to improve client acquisition." },
+        { "desc": "Managing dynamic content using Sanity and ensuring easy updates." }
       ],
-    },
+      "learnings": [
+        { "desc": "Enhanced proficiency in Next.js and TypeScript for building marketing websites." },
+        { "desc": "Deepened knowledge in SEO optimization for better search visibility." },
+        { "desc": "Improved experience with CMS integration using Sanity and EmailJS for effective content management." }
+      ]
+    },  
     {
       title: "Horsely-World",
       slug: "horsely-world",
@@ -419,6 +429,69 @@ export const projects = {
         },
         {
           desc: "Improved skills in integrating and managing APIs within a modern web application.",
+        },
+      ],
+    },
+    {
+      "title": "Trumed Medical Suppliers",
+      "slug": "trumed-medical-suppliers",
+      "image": trumed,
+      "description": "Trumed Medical Suppliers F.Z.E offers a range of medical gas equipment, oxygen therapy products, and safety storage solutions for hospitals and industries worldwide.",
+      "link": "https://www.trumedmedical.com",
+      "icon": "/icons/trumed.png",
+      "stack": [
+        { "key": "nextjs", "element": <TbBrandNextjs className="h-8 w-8" /> },
+        { "key": "react", "element": <SiReact className="h-8 w-8" /> },
+        { "key": "typescript", "element": <SiTypescript className="h-8 w-8" /> },
+        { "key": "tailwindcss", "element": <SiTailwindcss className="h-8 w-8" /> },
+        { "key": "react-spring", "element": <GiSpring className="h-8 w-8" /> },
+        { "key": "contentful", "element": <SiContentful className="h-8 w-8" /> },
+        { "key": "emailjs", "element": <MdEmail className="h-8 w-8" /> }
+      ],
+      "caseStudy": "In this project, I worked as a Modern Full-Stack Developer to create a marketing website for Trumed Medical Suppliers F.Z.E. The website was built using Next.js 13, React 18, TypeScript, and Tailwind CSS, with animations powered by React Spring. I integrated Contentful for content management and EmailJS for communication. The website is fully responsive and delivers an engaging, interactive experience for showcasing Trumed’s extensive product range. Performance optimization, SEO improvements, and enhancing user engagement were key priorities to ensure the site effectively promotes the brand.",
+      
+      "challenges": [
+        { "desc": "Creating a visually appealing and responsive site for a global medical supplier." },
+        { "desc": "Integrating React Spring for smooth animations and interactions." },
+        { "desc": "Ensuring content management flexibility using Contentful." }
+      ],
+      "learnings": [
+        { "desc": "Gained deeper experience in using React Spring for creating dynamic user interfaces." },
+        { "desc": "Enhanced my skills in content management with Contentful." },
+        { "desc": "Refined best practices for building SEO-friendly marketing websites." }
+      ]
+    }
+,    
+    {
+      title: "BITXCELS",
+      slug: "bitxcels",
+      image: bitxcles,
+      description: "Welcome to Bitxcels, where innovation meets excellence.",
+      link: "https://bitxcels.com",
+      icon:"/icons/no-img.png" ,
+      stack: [
+        { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
+        { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
+        { key: "react", element: <SiReact className="h-8 w-8" /> },
+        { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
+      ],
+      caseStudy:
+        "In this project, my role as a Modern Full-Stack Developer centered around creating a fully responsive, intuitive UI design for a website utilizing Next.js 13, JavaScript, Framer Motion, Email JS, and Tailwind CSS. The process encompassed planning and design with a focus on responsive layouts, seamless navigation and user flow, and ensuring typography and readability are optimized for all devices. I employed a component-based approach to structure the site, integrating animations and interactions for a dynamic user experience. Performance optimization, accessibility, thorough testing and debugging, comprehensive documentation, and a commitment to continuous improvement were key aspects of my development strategy.",
+
+      challenges: [
+        { desc: "Creating a fully responsive and intuitive UI design." },
+        { desc: "Ensuring seamless navigation and user flow." },
+        { desc: "Optimizing typography and readability across all devices." },
+      ],
+      learnings: [
+        {
+          desc: "Improved skills in using Next.js and JavaScript for responsive design.",
+        },
+        {
+          desc: "Gained experience in using Framer Motion for animations and interactions.",
+        },
+        {
+          desc: "Enhanced understanding of performance optimization and accessibility best practices.",
         },
       ],
     },
