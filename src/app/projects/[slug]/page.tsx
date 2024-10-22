@@ -18,6 +18,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { FaGlobe } from "react-icons/fa6";
 
 export async function generateMetadata({
   params,
@@ -77,17 +79,19 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <Link
             href={project.link}
             target="_blank"
-            className="flex items-center justify-center gap-1 text-xl hover:text-foreground"
+            className="flex items-center justify-center gap-1 text-lg hover:text-foreground"
           >
+            <FaGlobe className="h-5 w-5 hover:text-white" />
             Visit Site
           </Link>
           {project.github ? (
             <Link
               href={project.github}
               target="_blank"
-              className="flex items-center justify-center gap-1 text-xl hover:text-foreground"
+              className="flex items-center justify-center gap-1 text-lg hover:text-foreground"
             >
-              Source Code
+              <GitHubLogoIcon className="h-5 w-5 hover:text-white" />
+              Github
             </Link>
           ) : (
             <></>

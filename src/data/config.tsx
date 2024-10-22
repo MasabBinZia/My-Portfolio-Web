@@ -228,6 +228,10 @@ export const projects = {
         },
       ],
     },
+    // {
+      
+    // },
+
 
     //client project
 
@@ -460,8 +464,7 @@ export const projects = {
         { "desc": "Enhanced my skills in content management with Contentful." },
         { "desc": "Refined best practices for building SEO-friendly marketing websites." }
       ]
-    }
-,    
+    },    
     {
       title: "BITXCELS",
       slug: "bitxcels",

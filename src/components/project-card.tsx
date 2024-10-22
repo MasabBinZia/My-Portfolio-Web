@@ -44,7 +44,7 @@ export default function ProjectCard({
 
           <div className="w-full">
             <div className="flex gap-4 items-center">
-              <CardTitle>{title}</CardTitle>
+              <CardTitle className="text-xl font-bold">{title}</CardTitle>
               {cardType === "normal" ? (
                 <Badge className="mr-20">
                   {isPersonalProject ? "Personal" : "Work"}
@@ -54,11 +54,11 @@ export default function ProjectCard({
               )}
             </div>
             <CardDescription className="text-gray-800 dark:text-gray-400 flex justify-between items-center">
-              <p className="line-clamp-1 lg:line-clamp-0 md:line-clamp-0 max-w-sm">
+            
                 {desc}
-              </p>
+           
 
-              <div className="flex items-center justify-end gap-2">
+              {/* <div className="flex items-center justify-end gap-2">
                 <LinkPreview
                   url={projLink}
                   className={cn(
@@ -80,7 +80,7 @@ export default function ProjectCard({
                 ) : (
                   <></>
                 )}
-              </div>
+              </div> */}
             </CardDescription>
           </div>
         </CardHeader>
