@@ -44,7 +44,7 @@ export default function ProjectCard({
 
           <div className="w-full">
             <div className="flex gap-4 items-center">
-              <CardTitle className="text-xl font-bold">{title}</CardTitle>
+              <CardTitle className="text-xl font-bold line-clamp-1">{title}</CardTitle>
               {cardType === "normal" ? (
                 <Badge className="mr-20">
                   {isPersonalProject ? "Personal" : "Work"}
@@ -53,34 +53,8 @@ export default function ProjectCard({
                 <></>
               )}
             </div>
-            <CardDescription className="text-gray-800 dark:text-gray-400 flex justify-between items-center">
-            
+            <CardDescription className="text-gray-800 dark:text-gray-400 flex justify-between items-center line-clamp-2">
                 {desc}
-           
-
-              {/* <div className="flex items-center justify-end gap-2">
-                <LinkPreview
-                  url={projLink}
-                  className={cn(
-                    buttonVariants({ variant: "link", size: "icon" })
-                  )}
-                >
-                  <LinkIcon className="h-6 w-6" />
-                </LinkPreview>
-                {githubLink ? (
-                  <Link
-                    href={githubLink}
-                    target="_blank"
-                    className={cn(
-                      buttonVariants({ variant: "link", size: "icon" })
-                    )}
-                  >
-                    <GitHubLogoIcon className="h-6 w-6 hover:text-white" />
-                  </Link>
-                ) : (
-                  <></>
-                )}
-              </div> */}
             </CardDescription>
           </div>
         </CardHeader>

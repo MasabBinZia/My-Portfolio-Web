@@ -21,20 +21,22 @@ export default function Projects() {
             </TabsList>
             <TabsContent
               value="myproj"
-              className="flex flex-col justify-center items-center gap-2"
+              className="grid grid-cols-2 justify-center items-center gap-2"
             >
-              {projects.Myprojects.slice(0, 4).map((proj, index) => (
-                <ProjectCard
-                  key={index}
-                  title={proj.title}
-                  desc={proj.description}
-                  icon={proj.icon}
-                  projLink={proj.link}
-                  githubLink={proj.github}
-                  more={`/projects/${proj.slug}`}
-                  cardType="featured"
-                />
-              ))}
+              {projects.Myprojects.filter((proj) => proj.isPersonalProject).slice(0,4).map(
+                (proj, index) => (
+                  <ProjectCard
+                    key={index}
+                    title={proj.title}
+                    desc={proj.description}
+                    icon={proj.icon}
+                    projLink={proj.link}
+                    githubLink={proj.github}
+                    more={`/projects/${proj.slug}`}
+                    cardType="featured"
+                  />
+                )
+              )}
             </TabsContent>
             <TabsContent
               value="workproj"

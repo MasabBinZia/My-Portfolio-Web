@@ -18,6 +18,7 @@ import {
   SiClerk,
   SiSanity,
   SiContentful,
+  SiThirdweb,
 } from "react-icons/si";
 import {
   TbBrandNextjs,
@@ -31,7 +32,6 @@ import { FaAws, FaFigma } from "react-icons/fa6";
 import { FaHardHat } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { GiSpring } from "react-icons/gi";
-
 
 import {
   Code,
@@ -53,6 +53,7 @@ import motorMods from "../../public/projects/motormods.jpg";
 import summaai from "../../public/projects/summaai.jpg";
 import EAH from "../../public/projects/eliteacc.jpg";
 import trumed from "../../public/projects/trumed.jpg";
+import thrr from "../../public/projects/thrr.jpg";
 
 export const projects = {
   title: "Projects",
@@ -64,12 +65,11 @@ export const projects = {
       image: dinemarket,
       isPersonalProject: true,
 
-
       description:
         "Dine Market is an e-commerce project developed for the PIAIC hackathon.",
       link: "https://dine-market-ecommerce-web.vercel.app",
       github: "https://github.com/MasabBinZia/DineMarket-Ecommerce-web ",
-      icon:"/icons/dinemarket.png" ,
+      icon: "/icons/dinemarket.png",
       stack: [
         { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
@@ -114,7 +114,7 @@ export const projects = {
         "The Photos App is a web application , a cloud-based media management platform.",
       link: "https://photo-album-cloudinary.vercel.app",
       github: "https://github.com/MasabBinZia/Photo-Album-Cloudinary",
-      icon:"/icons/photoapp.png" ,
+      icon: "/icons/photoapp.png",
       stack: [
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
         { key: "react", element: <SiReact className="h-8 w-8" /> },
@@ -142,45 +142,98 @@ export const projects = {
       ],
     },
     {
-      title: "VotePulse E-voting App",
-      slug: "votepulse",
-      image: votepulse,
+      title: "Treasure Hunt Riddle Race (THRR)",
+      slug: "thrr",
+      image: thrr,
       isPersonalProject: true,
 
       description:
-        "MERN Stack E-voting App. User can vote and Admin can see their votes.",
-      link: "https://github.com/MasabBinZia/e-voting-app",
-      github: "https://github.com/MasabBinZia/e-voting-app",
-      icon:"/icons/votepulse.png" ,
+        "Treasure Hunt Riddle Race (THRR) Telegram mini app! Test your wits and speed by solving 10 riddles in just 100 seconds.",
+      link: "t.me/thrr_game_bot/Thrr",
+      github: "https://github.com/MasabBinZia/THRR-telegram-game.git",
+      icon: "/icons/thrr.png",
       stack: [
-        { key: "mongodb", element: <DiMongodb className="h-8 w-8" /> },
-        { key: "expressjs", element: <SiExpress className="h-8 w-8" /> },
         { key: "react", element: <SiReact className="h-8 w-8" /> },
-        { key: "nodejs", element: <IoLogoNodejs className="h-8 w-8" /> },
+        {key: "thirdweb", element: <SiThirdweb className="h-8 w-8" /> },
+        { key: "vite", element: <SiVite className="h-8 w-8" /> },
         { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
-        {
-          key: "tanstack query",
-          element: <SiReactquery className="h-8 w-8" />,
-        },
-        { key: "axios", element: <SiAxios className="h-8 w-8" /> },
-        { key: "shadcn ui", element: <SiShadcnui className="h-8 w-8" /> },
+        { key: "framermotion", element: <TbBrandFramerMotion className="h-8 w-8" /> },
         { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
+        { key: "shadcn ui", element: <SiShadcnui className="h-8 w-8" /> },
       ],
       caseStudy:
-        "The VotePulse E-voting App is a MERN stack application allowing users to vote and admins to view results. Featuring JWT token authentication and role-based authorization, the app ensures secure and streamlined voting. The modern UI/UX, crafted using Shadcn UI, provides an intuitive and engaging experience. For Data Fetching I used Tanstack Query and posting data through axios.",
-
+        "Treasure Hunt Riddle Race (THRR) is a fast-paced Telegram mini-app where users test their problem-solving speed by tackling 10 challenging riddles in under 100 seconds. Correctly answering all riddles earns players 10 tokens, automatically transferred to their wallets. The app features a responsive, intuitive design with real-time feedback, ensuring an engaging and immersive experience.",
       challenges: [
-        { desc: "Implementing secure authentication using JWT tokens." },
         {
-          desc: "Ensuring role-based authorization for user and admin functionalities.",
+          desc: "Integrating real-time feedback within a 100-second timer without lag or delay.",
         },
-        { desc: "Creating a modern and responsive UI/UX with Shadcn UI." },
+        {
+          desc: "Implementing secure, real-time token transactions using ThirdWeb for Web3 compatibility.",
+        },
+        {
+          desc: "Achieving seamless UI responsiveness and animations across different devices and screen sizes.",
+        },
       ],
       learnings: [
-        { desc: "Enhanced understanding of JWT token-based authentication." },
-        { desc: "Improved skills in role-based access control." },
         {
-          desc: "Developed proficiency in designing modern UI/UX with Shadcn UI.",
+          desc: "Enhanced understanding of Web3 authentication and token transfer mechanics with ThirdWeb.",
+        },
+        {
+          desc: "Improved skills in building responsive, user-friendly interfaces with ShadcnUI and Tailwind CSS.",
+        },
+        {
+          desc: "Gained experience in optimizing real-time interactions and animations using Framer Motion and Bun for high-performance applications.",
+        },
+        {
+          title: "VotePulse E-voting App",
+          slug: "votepulse",
+          image: votepulse,
+          isPersonalProject: true,
+
+          description:
+            "MERN Stack E-voting App. User can vote and Admin can see their votes.",
+          link: "https://github.com/MasabBinZia/e-voting-app",
+          github: "https://github.com/MasabBinZia/e-voting-app",
+          icon: "/icons/votepulse.png",
+          stack: [
+            { key: "mongodb", element: <DiMongodb className="h-8 w-8" /> },
+            { key: "expressjs", element: <SiExpress className="h-8 w-8" /> },
+            { key: "react", element: <SiReact className="h-8 w-8" /> },
+            { key: "nodejs", element: <IoLogoNodejs className="h-8 w-8" /> },
+            {
+              key: "typescript",
+              element: <SiTypescript className="h-8 w-8" />,
+            },
+            {
+              key: "tanstack query",
+              element: <SiReactquery className="h-8 w-8" />,
+            },
+            { key: "axios", element: <SiAxios className="h-8 w-8" /> },
+            { key: "shadcn ui", element: <SiShadcnui className="h-8 w-8" /> },
+            {
+              key: "tailwindcss",
+              element: <SiTailwindcss className="h-8 w-8" />,
+            },
+          ],
+          caseStudy:
+            "The VotePulse E-voting App is a MERN stack application allowing users to vote and admins to view results. Featuring JWT token authentication and role-based authorization, the app ensures secure and streamlined voting. The modern UI/UX, crafted using Shadcn UI, provides an intuitive and engaging experience. For Data Fetching I used Tanstack Query and posting data through axios.",
+
+          challenges: [
+            { desc: "Implementing secure authentication using JWT tokens." },
+            {
+              desc: "Ensuring role-based authorization for user and admin functionalities.",
+            },
+            { desc: "Creating a modern and responsive UI/UX with Shadcn UI." },
+          ],
+          learnings: [
+            {
+              desc: "Enhanced understanding of JWT token-based authentication.",
+            },
+            { desc: "Improved skills in role-based access control." },
+            {
+              desc: "Developed proficiency in designing modern UI/UX with Shadcn UI.",
+            },
+          ],
         },
       ],
     },
@@ -194,7 +247,7 @@ export const projects = {
         "Effortlessly Summarize Articles with Cutting-Edge AI Technology. Get the Key Points in Seconds!",
       link: "https://summa-ai.vercel.app",
       github: "https://github.com/MasabBinZia/SummaAI",
-      icon:"/icons/summaai.png" ,
+      icon: "/icons/summaai.png",
       stack: [
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
         { key: "react", element: <SiReact className="h-8 w-8" /> },
@@ -228,41 +281,94 @@ export const projects = {
         },
       ],
     },
-    // {
-      
-    // },
+    {
+      title: "VotePulse E-voting App",
+      slug: "votepulse",
+      image: votepulse,
+      isPersonalProject: true,
 
+      description:
+        "MERN Stack E-voting App. User can vote and Admin can see their votes.",
+      link: "https://github.com/MasabBinZia/e-voting-app",
+      github: "https://github.com/MasabBinZia/e-voting-app",
+      icon: "/icons/votepulse.png",
+      stack: [
+        { key: "mongodb", element: <DiMongodb className="h-8 w-8" /> },
+        { key: "expressjs", element: <SiExpress className="h-8 w-8" /> },
+        { key: "react", element: <SiReact className="h-8 w-8" /> },
+        { key: "nodejs", element: <IoLogoNodejs className="h-8 w-8" /> },
+        { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
+        {
+          key: "tanstack query",
+          element: <SiReactquery className="h-8 w-8" />,
+        },
+        { key: "axios", element: <SiAxios className="h-8 w-8" /> },
+        { key: "shadcn ui", element: <SiShadcnui className="h-8 w-8" /> },
+        { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
+      ],
+      caseStudy:
+        "The VotePulse E-voting App is a MERN stack application allowing users to vote and admins to view results. Featuring JWT token authentication and role-based authorization, the app ensures secure and streamlined voting. The modern UI/UX, crafted using Shadcn UI, provides an intuitive and engaging experience. For Data Fetching I used Tanstack Query and posting data through axios.",
+
+      challenges: [
+        { desc: "Implementing secure authentication using JWT tokens." },
+        {
+          desc: "Ensuring role-based authorization for user and admin functionalities.",
+        },
+        { desc: "Creating a modern and responsive UI/UX with Shadcn UI." },
+      ],
+      learnings: [
+        { desc: "Enhanced understanding of JWT token-based authentication." },
+        { desc: "Improved skills in role-based access control." },
+        {
+          desc: "Developed proficiency in designing modern UI/UX with Shadcn UI.",
+        },
+      ],
+    },
 
     //client project
 
     {
-      "title": "Elite Accounting Hub",
-      "slug": "elite-accounting-hub",
-      "image": EAH,
-      "description": "Elite Accounting Hub offers comprehensive accounting, finance, and tax services for US and Canadian clients.",
-      "link": "https://eliteaccountinghub.com",
-      "icon": "/icons/EAH.png",
-      "stack": [
-        { "key": "nextjs", "element": <TbBrandNextjs className="h-8 w-8" /> },
-        { "key": "typescript", "element": <SiTypescript className="h-8 w-8" /> },
-        { "key": "shadcn", "element": <SiShadcnui className="h-8 w-8" /> },
-        { "key": "tailwindcss", "element": <SiTailwindcss className="h-8 w-8" /> },
-        { "key": "sanity", "element": <SiSanity className="h-8 w-8" /> },
-        { "key": "emailjs", "element": <MdEmail className="h-8 w-8" /> }
+      title: "Elite Accounting Hub",
+      slug: "elite-accounting-hub",
+      image: EAH,
+      description:
+        "Elite Accounting Hub offers comprehensive accounting, finance, and tax services for US and Canadian clients.",
+      link: "https://eliteaccountinghub.com",
+      icon: "/icons/EAH.png",
+      stack: [
+        { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
+        { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
+        { key: "shadcn", element: <SiShadcnui className="h-8 w-8" /> },
+        { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
+        { key: "sanity", element: <SiSanity className="h-8 w-8" /> },
+        { key: "emailjs", element: <MdEmail className="h-8 w-8" /> },
       ],
-      "caseStudy": "In this project, my role as a Modern Full-Stack Developer focused on building a marketing website for Elite Accounting Hub using Next.js 13, TypeScript, ShadCN, and Tailwind CSS. I integrated Sanity as the CMS for content management and utilized EmailJS for communication services. Key tasks included creating responsive layouts, optimizing SEO to increase client acquisition, and delivering a smooth and user-friendly experience. By combining design, performance optimization, and content management, I ensured the website effectively communicates the value of Elite Accounting Hub's services.",
-      
-      "challenges": [
-        { "desc": "Building a responsive and visually appealing marketing site." },
-        { "desc": "Incorporating SEO best practices to improve client acquisition." },
-        { "desc": "Managing dynamic content using Sanity and ensuring easy updates." }
+      caseStudy:
+        "In this project, my role as a Modern Full-Stack Developer focused on building a marketing website for Elite Accounting Hub using Next.js 13, TypeScript, ShadCN, and Tailwind CSS. I integrated Sanity as the CMS for content management and utilized EmailJS for communication services. Key tasks included creating responsive layouts, optimizing SEO to increase client acquisition, and delivering a smooth and user-friendly experience. By combining design, performance optimization, and content management, I ensured the website effectively communicates the value of Elite Accounting Hub's services.",
+
+      challenges: [
+        {
+          desc: "Building a responsive and visually appealing marketing site.",
+        },
+        {
+          desc: "Incorporating SEO best practices to improve client acquisition.",
+        },
+        {
+          desc: "Managing dynamic content using Sanity and ensuring easy updates.",
+        },
       ],
-      "learnings": [
-        { "desc": "Enhanced proficiency in Next.js and TypeScript for building marketing websites." },
-        { "desc": "Deepened knowledge in SEO optimization for better search visibility." },
-        { "desc": "Improved experience with CMS integration using Sanity and EmailJS for effective content management." }
-      ]
-    },  
+      learnings: [
+        {
+          desc: "Enhanced proficiency in Next.js and TypeScript for building marketing websites.",
+        },
+        {
+          desc: "Deepened knowledge in SEO optimization for better search visibility.",
+        },
+        {
+          desc: "Improved experience with CMS integration using Sanity and EmailJS for effective content management.",
+        },
+      ],
+    },
     {
       title: "Horsely-World",
       slug: "horsely-world",
@@ -270,7 +376,7 @@ export const projects = {
       description:
         "Web 3.0 platform to mint horses genetics data as NFTs & can download them.",
       link: "https://horselyworld.com",
-      icon:"/icons/horsely.png" ,
+      icon: "/icons/horsely.png",
       stack: [
         { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
@@ -311,7 +417,7 @@ export const projects = {
       image: chainverse,
       description: "Engaging static web application of ChainVerse Lab.",
       link: "https://chainvese-website.vercel.app",
-      icon:"/icons/no-img.png" ,
+      icon: "/icons/no-img.png",
       stack: [
         { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
@@ -354,7 +460,7 @@ export const projects = {
       description:
         "Enhancing the frontend using Bootstrap, ReactJS, Ethers JS, Firebase, and Wagmi.",
       link: "https://multisheapmint.web.app",
-      icon:"/icons/sheep2mint.png" ,
+      icon: "/icons/sheep2mint.png",
       stack: [
         { key: "react", element: <SiReact className="h-8 w-8" /> },
         { key: "firebase", element: <RiFirebaseFill className="h-8 w-8" /> },
@@ -403,7 +509,7 @@ export const projects = {
       description:
         "Enhance the UI/UX by adding ui components into existing MotorMods site.",
       link: "https://motor-mods.com",
-      icon:"/icons/motormods.png" ,
+      icon: "/icons/motormods.png",
       stack: [
         { key: "react", element: <SiReact className="h-8 w-8" /> },
         { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
@@ -437,41 +543,51 @@ export const projects = {
       ],
     },
     {
-      "title": "Trumed Medical Suppliers",
-      "slug": "trumed-medical-suppliers",
-      "image": trumed,
-      "description": "Trumed Medical Suppliers F.Z.E offers a range of medical gas equipment, oxygen therapy products, and safety storage solutions for hospitals and industries worldwide.",
-      "link": "https://www.trumedmedical.com",
-      "icon": "/icons/trumed.png",
-      "stack": [
-        { "key": "nextjs", "element": <TbBrandNextjs className="h-8 w-8" /> },
-        { "key": "react", "element": <SiReact className="h-8 w-8" /> },
-        { "key": "typescript", "element": <SiTypescript className="h-8 w-8" /> },
-        { "key": "tailwindcss", "element": <SiTailwindcss className="h-8 w-8" /> },
-        { "key": "react-spring", "element": <GiSpring className="h-8 w-8" /> },
-        { "key": "contentful", "element": <SiContentful className="h-8 w-8" /> },
-        { "key": "emailjs", "element": <MdEmail className="h-8 w-8" /> }
+      title: "Trumed Medical Suppliers",
+      slug: "trumed-medical-suppliers",
+      image: trumed,
+      description:
+        "Trumed Medical Suppliers F.Z.E offers a range of medical gas equipment, oxygen therapy products, and safety storage solutions for hospitals and industries worldwide.",
+      link: "https://www.trumedmedical.com",
+      icon: "/icons/trumed.png",
+      stack: [
+        { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
+        { key: "react", element: <SiReact className="h-8 w-8" /> },
+        { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
+        { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
+        { key: "react-spring", element: <GiSpring className="h-8 w-8" /> },
+        { key: "contentful", element: <SiContentful className="h-8 w-8" /> },
+        { key: "emailjs", element: <MdEmail className="h-8 w-8" /> },
       ],
-      "caseStudy": "In this project, I worked as a Modern Full-Stack Developer to create a marketing website for Trumed Medical Suppliers F.Z.E. The website was built using Next.js 13, React 18, TypeScript, and Tailwind CSS, with animations powered by React Spring. I integrated Contentful for content management and EmailJS for communication. The website is fully responsive and delivers an engaging, interactive experience for showcasing Trumed’s extensive product range. Performance optimization, SEO improvements, and enhancing user engagement were key priorities to ensure the site effectively promotes the brand.",
-      
-      "challenges": [
-        { "desc": "Creating a visually appealing and responsive site for a global medical supplier." },
-        { "desc": "Integrating React Spring for smooth animations and interactions." },
-        { "desc": "Ensuring content management flexibility using Contentful." }
+      caseStudy:
+        "In this project, I worked as a Modern Full-Stack Developer to create a marketing website for Trumed Medical Suppliers F.Z.E. The website was built using Next.js 13, React 18, TypeScript, and Tailwind CSS, with animations powered by React Spring. I integrated Contentful for content management and EmailJS for communication. The website is fully responsive and delivers an engaging, interactive experience for showcasing Trumed’s extensive product range. Performance optimization, SEO improvements, and enhancing user engagement were key priorities to ensure the site effectively promotes the brand.",
+
+      challenges: [
+        {
+          desc: "Creating a visually appealing and responsive site for a global medical supplier.",
+        },
+        {
+          desc: "Integrating React Spring for smooth animations and interactions.",
+        },
+        { desc: "Ensuring content management flexibility using Contentful." },
       ],
-      "learnings": [
-        { "desc": "Gained deeper experience in using React Spring for creating dynamic user interfaces." },
-        { "desc": "Enhanced my skills in content management with Contentful." },
-        { "desc": "Refined best practices for building SEO-friendly marketing websites." }
-      ]
-    },    
+      learnings: [
+        {
+          desc: "Gained deeper experience in using React Spring for creating dynamic user interfaces.",
+        },
+        { desc: "Enhanced my skills in content management with Contentful." },
+        {
+          desc: "Refined best practices for building SEO-friendly marketing websites.",
+        },
+      ],
+    },
     {
       title: "BITXCELS",
       slug: "bitxcels",
       image: bitxcles,
       description: "Welcome to Bitxcels, where innovation meets excellence.",
       link: "https://bitxcels.com",
-      icon:"/icons/no-img.png" ,
+      icon: "/icons/no-img.png",
       stack: [
         { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
         { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
