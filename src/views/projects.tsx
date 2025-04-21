@@ -21,10 +21,11 @@ export default function Projects() {
             </TabsList>
             <TabsContent
               value="myproj"
-              className="grid grid-cols-2 justify-center items-center gap-2"
+              className="flex flex-col justify-center items-center gap-2"
             >
-              {projects.Myprojects.filter((proj) => proj.isPersonalProject).slice(0,4).map(
-                (proj, index) => (
+              {projects.Myprojects.filter((proj) => proj.isPersonalProject)
+                .slice(0, 4)
+                .map((proj, index) => (
                   <ProjectCard
                     key={index}
                     title={proj.title}
@@ -35,8 +36,7 @@ export default function Projects() {
                     more={`/projects/${proj.slug}`}
                     cardType="featured"
                   />
-                )
-              )}
+                ))}
             </TabsContent>
             <TabsContent
               value="workproj"

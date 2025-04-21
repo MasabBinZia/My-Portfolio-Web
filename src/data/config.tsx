@@ -154,10 +154,13 @@ export const projects = {
       icon: "/icons/thrr.png",
       stack: [
         { key: "react", element: <SiReact className="h-8 w-8" /> },
-        {key: "thirdweb", element: <SiThirdweb className="h-8 w-8" /> },
+        { key: "thirdweb", element: <SiThirdweb className="h-8 w-8" /> },
         { key: "vite", element: <SiVite className="h-8 w-8" /> },
         { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
-        { key: "framermotion", element: <TbBrandFramerMotion className="h-8 w-8" /> },
+        {
+          key: "framermotion",
+          element: <TbBrandFramerMotion className="h-8 w-8" />,
+        },
         { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
         { key: "shadcn ui", element: <SiShadcnui className="h-8 w-8" /> },
       ],
@@ -411,48 +414,48 @@ export const projects = {
         },
       ],
     },
-    {
-      title: "ChainVerse Lab",
-      slug: "chain-verse-lab",
-      image: chainverse,
-      description: "Engaging static web application of ChainVerse Lab.",
-      link: "https://chainvese-website.vercel.app",
-      icon: "/icons/no-img.png",
-      stack: [
-        { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
-        { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
-        { key: "react", element: <SiReact className="h-8 w-8" /> },
-        { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
-        {
-          key: "FramerMotion",
-          element: <TbBrandFramerMotion className="h-8 w-8" />,
-        },
-        { key: "threejs", element: <TbBrandThreejs className="h-8 w-8" /> },
+    // {
+    //   title: "ChainVerse Lab",
+    //   slug: "chain-verse-lab",
+    //   image: chainverse,
+    //   description: "Engaging static web application of ChainVerse Lab.",
+    //   link: "https://chainvese-website.vercel.app",
+    //   icon: "/icons/no-img.png",
+    //   stack: [
+    //     { key: "typescript", element: <SiTypescript className="h-8 w-8" /> },
+    //     { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
+    //     { key: "react", element: <SiReact className="h-8 w-8" /> },
+    //     { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
+    //     {
+    //       key: "FramerMotion",
+    //       element: <TbBrandFramerMotion className="h-8 w-8" />,
+    //     },
+    //     { key: "threejs", element: <TbBrandThreejs className="h-8 w-8" /> },
 
-        { key: "emailjs", element: <MdEmail className="h-8 w-8" /> },
-      ],
-      caseStudy:
-        "As a modern Full-Stack Developer, I led the development of an engaging web application using Next.js 14, Tailwind CSS, Framer Motion, Email JS, and Three.js. My work involved the complete design of the app, converting designs into TypeScript (TSX) code, and enhancing user interaction with the integration of Three.js models. I focused on responsive design, user-friendly navigation, readability, and component-based architecture. Emphasizing animations, performance optimization, accessibility, and thorough testing, I ensured a robust, dynamic user experience. My approach was documented and geared towards continuous improvement, embodying modern development practices.",
+    //     { key: "emailjs", element: <MdEmail className="h-8 w-8" /> },
+    //   ],
+    //   caseStudy:
+    //     "As a modern Full-Stack Developer, I led the development of an engaging web application using Next.js 14, Tailwind CSS, Framer Motion, Email JS, and Three.js. My work involved the complete design of the app, converting designs into TypeScript (TSX) code, and enhancing user interaction with the integration of Three.js models. I focused on responsive design, user-friendly navigation, readability, and component-based architecture. Emphasizing animations, performance optimization, accessibility, and thorough testing, I ensured a robust, dynamic user experience. My approach was documented and geared towards continuous improvement, embodying modern development practices.",
 
-      challenges: [
-        { desc: "Integrating Three.js models for enhanced user interaction." },
-        { desc: "Ensuring responsive design and readability across devices." },
-        {
-          desc: "Optimizing performance and accessibility for a dynamic user experience.",
-        },
-      ],
-      learnings: [
-        {
-          desc: "Improved skills in using Three.js for creating interactive models.",
-        },
-        {
-          desc: "Gained experience in converting designs into TypeScript (TSX) code.",
-        },
-        {
-          desc: "Enhanced understanding of performance optimization and accessibility.",
-        },
-      ],
-    },
+    //   challenges: [
+    //     { desc: "Integrating Three.js models for enhanced user interaction." },
+    //     { desc: "Ensuring responsive design and readability across devices." },
+    //     {
+    //       desc: "Optimizing performance and accessibility for a dynamic user experience.",
+    //     },
+    //   ],
+    //   learnings: [
+    //     {
+    //       desc: "Improved skills in using Three.js for creating interactive models.",
+    //     },
+    //     {
+    //       desc: "Gained experience in converting designs into TypeScript (TSX) code.",
+    //     },
+    //     {
+    //       desc: "Enhanced understanding of performance optimization and accessibility.",
+    //     },
+    //   ],
+    // },
     {
       title: "Sheep2Mint",
       slug: "sheep2mint",
@@ -581,39 +584,39 @@ export const projects = {
         },
       ],
     },
-    {
-      title: "BITXCELS",
-      slug: "bitxcels",
-      image: bitxcles,
-      description: "Welcome to Bitxcels, where innovation meets excellence.",
-      link: "https://bitxcels.com",
-      icon: "/icons/no-img.png",
-      stack: [
-        { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
-        { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
-        { key: "react", element: <SiReact className="h-8 w-8" /> },
-        { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
-      ],
-      caseStudy:
-        "In this project, my role as a Modern Full-Stack Developer centered around creating a fully responsive, intuitive UI design for a website utilizing Next.js 13, JavaScript, Framer Motion, Email JS, and Tailwind CSS. The process encompassed planning and design with a focus on responsive layouts, seamless navigation and user flow, and ensuring typography and readability are optimized for all devices. I employed a component-based approach to structure the site, integrating animations and interactions for a dynamic user experience. Performance optimization, accessibility, thorough testing and debugging, comprehensive documentation, and a commitment to continuous improvement were key aspects of my development strategy.",
+    // {
+    //   title: "BITXCELS",
+    //   slug: "bitxcels",
+    //   image: bitxcles,
+    //   description: "Welcome to Bitxcels, where innovation meets excellence.",
+    //   link: "https://bitxcels.com",
+    //   icon: "/icons/no-img.png",
+    //   stack: [
+    //     { key: "javascript", element: <SiJavascript className="h-8 w-8" /> },
+    //     { key: "nextjs", element: <TbBrandNextjs className="h-8 w-8" /> },
+    //     { key: "react", element: <SiReact className="h-8 w-8" /> },
+    //     { key: "tailwindcss", element: <SiTailwindcss className="h-8 w-8" /> },
+    //   ],
+    //   caseStudy:
+    //     "In this project, my role as a Modern Full-Stack Developer centered around creating a fully responsive, intuitive UI design for a website utilizing Next.js 13, JavaScript, Framer Motion, Email JS, and Tailwind CSS. The process encompassed planning and design with a focus on responsive layouts, seamless navigation and user flow, and ensuring typography and readability are optimized for all devices. I employed a component-based approach to structure the site, integrating animations and interactions for a dynamic user experience. Performance optimization, accessibility, thorough testing and debugging, comprehensive documentation, and a commitment to continuous improvement were key aspects of my development strategy.",
 
-      challenges: [
-        { desc: "Creating a fully responsive and intuitive UI design." },
-        { desc: "Ensuring seamless navigation and user flow." },
-        { desc: "Optimizing typography and readability across all devices." },
-      ],
-      learnings: [
-        {
-          desc: "Improved skills in using Next.js and JavaScript for responsive design.",
-        },
-        {
-          desc: "Gained experience in using Framer Motion for animations and interactions.",
-        },
-        {
-          desc: "Enhanced understanding of performance optimization and accessibility best practices.",
-        },
-      ],
-    },
+    //   challenges: [
+    //     { desc: "Creating a fully responsive and intuitive UI design." },
+    //     { desc: "Ensuring seamless navigation and user flow." },
+    //     { desc: "Optimizing typography and readability across all devices." },
+    //   ],
+    //   learnings: [
+    //     {
+    //       desc: "Improved skills in using Next.js and JavaScript for responsive design.",
+    //     },
+    //     {
+    //       desc: "Gained experience in using Framer Motion for animations and interactions.",
+    //     },
+    //     {
+    //       desc: "Enhanced understanding of performance optimization and accessibility best practices.",
+    //     },
+    //   ],
+    // },
   ],
 };
 
