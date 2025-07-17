@@ -1,18 +1,16 @@
 "use client";
 
-import { Authenticated, Unauthenticated } from "convex/react";
-import { SignInButton, UserButton, useUser } from "@clerk/nextjs";
+import { UserButton, useUser } from "@clerk/nextjs";
 import { validEmail } from "@/lib/utils";
 
 export default function AdminPage() {
-  const { user } = useUser();
+  const { user, isLoaded } = useUser();
 
   const isAuthorized = user?.primaryEmailAddress?.emailAddress === validEmail;
 
   return (
     <>
-      <p className="text-gray-600 dark:text-gray-300"> </p>
-      <Authenticated>
+      <>
         <UserButton />
         {isAuthorized ? (
           <div className="p-4">
@@ -43,22 +41,7 @@ export default function AdminPage() {
             </div>
           </div>
         )}
-      </Authenticated>
-      <Unauthenticated>
-        <div className="p-4">
-          <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow">
-            <h2 className="text-xl font-semibold mb-4">Sign In Required</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Please sign in to access the admin area.
-            </p>
-            <SignInButton mode="modal">
-              <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">
-                Sign In
-              </button>
-            </SignInButton>
-          </div>
-        </div>
-      </Unauthenticated>
+      </>
     </>
   );
 }

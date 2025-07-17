@@ -1,7 +1,7 @@
 export default {
   providers: [
     {
-      domain: process.env.NEXT_PUBLIC_CONVEX_URL,
+      domain: "https://perceptive-kiwi-827.convex.cloud",
       applicationID: "convex",
     },
   ],
