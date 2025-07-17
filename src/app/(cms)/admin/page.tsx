@@ -2,10 +2,15 @@
 
 import { UserButton, useUser } from "@clerk/nextjs";
 import { validEmail } from "@/lib/utils";
+import { ProfileForm } from "@/components/admin/profile-admin";
+import { ExperienceManager } from "@/components/admin/experience-admin";
+import { SkillsManager } from "@/components/admin/skills-admin";
+import { GoalsManager } from "@/components/admin/goals-admin";
+import { SocialLinksManager } from "@/components/admin/socials-admin";
+import ProjectManager from "@/components/admin/project-admin";
 
 export default function AdminPage() {
   const { user, isLoaded } = useUser();
-
   const isAuthorized = user?.primaryEmailAddress?.emailAddress === validEmail;
 
   return (
@@ -15,18 +20,12 @@ export default function AdminPage() {
         {isAuthorized ? (
           <div className="p-4">
             <h1 className="text-3xl font-bold mb-6">Admin Dashboard</h1>
-
-            <div className="grid gap-6">
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
-                <h2 className="text-xl font-semibold mb-4">
-                  Welcome to your Admin Panel
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                  This is your secure admin area. Only you (masabmbz5@gmail.com)
-                  can access this page.
-                </p>
-              </div>
-            </div>
+            {/* <ProfileForm /> */}
+            {/* <ExperienceManager /> */}
+            {/* <SkillsManager /> */}
+            {/* <GoalsManager /> */}
+            {/* <SocialLinksManager /> */}
+            <ProjectManager />
           </div>
         ) : (
           <div className="p-4">
