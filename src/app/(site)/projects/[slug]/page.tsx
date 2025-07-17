@@ -37,7 +37,7 @@ const projects = {
     {
       id: 1,
       slug: "dinemarket",
-      title: "DineMarket - Food Delivery Platform",
+      title: "DineMarket",
       image:
         "https://masab-mbz-portfolio.vercel.app/_next/image?url=%2Ficons%2Fdinemarket.png&w=256&q=75",
       type: "Work",
@@ -273,8 +273,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <PageLayout>
-      <div className="py-12">
+    <>
+      <div className="container mx-auto px-4 py-12">
         <div className="mb-8">
           <Link
             href="/projects"
@@ -285,8 +285,21 @@ export default async function Page({ params }: { params: { slug: string } }) {
           </Link>
         </div>
 
-        {/* Project Hero Section */}
         <div className="flex flex-col lg:flex-row gap-8 items-start mb-12">
+          <img
+            src={
+              "https://masab-mbz-portfolio.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdinemarket.4d146fac.jpg&w=1080&q=75"
+            }
+            alt={project.title}
+            className="rounded-lg object-cover w-full h-full"
+            width={64}
+            height={64}
+          />
+          <div></div>
+        </div>
+
+        {/* Project Hero Section */}
+        <div className="flex flex-col gap-8 items-start mb-12">
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-4">
               <img
@@ -610,6 +623,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
           </Link>
         </div>
       </div>
-    </PageLayout>
+    </>
   );
 }
