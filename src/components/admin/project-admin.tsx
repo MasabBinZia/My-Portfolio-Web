@@ -223,7 +223,7 @@ export default function ProjectManager() {
           <CardTitle>All Projects</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid  gap-4">
             {allProjects?.map((project) => (
               <div
                 key={project._id}
