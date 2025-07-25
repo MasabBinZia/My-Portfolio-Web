@@ -51,10 +51,10 @@ export function SiteNavbar() {
                   key={item.href}
                   href={item.href}
                   className={`
-                      flex items-center gap-2 px-3 py-2 text-sm font-medium transition-all duration-200 rounded-none hover:bg-none hover:border-b-2 hover:border-primary hover:text-primary
+                      flex items-center gap-2 px-3 py-2 text-sm font-medium transition-all duration-200 rounded-none hover:bg-none hover:border-b-2 hover:border-[#00FF80] hover:text-[#00FF80]
                       ${
                         isActive
-                          ? "border-b-2 border-primary text-primary shadow-sm"
+                          ? "border-b-2 border-[#00FF80] text-[#00FF80] shadow-sm"
                           : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                       }
                     `}

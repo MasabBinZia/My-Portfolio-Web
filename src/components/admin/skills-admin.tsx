@@ -115,7 +115,7 @@ export function SkillsManager() {
             <Card
               key={skill._id}
               className={`cursor-pointer transition-colors ${
-                selectedSkillId === skill._id ? "ring-2 ring-primary" : ""
+                selectedSkillId === skill._id ? "ring-2 ring-[#00FF80]" : ""
               }`}
               onClick={() => handleSelectSkill(skill._id)}
             >

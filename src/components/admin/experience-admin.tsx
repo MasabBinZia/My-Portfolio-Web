@@ -134,7 +134,7 @@ export function ExperienceManager() {
               key={experience._id}
               className={`cursor-pointer transition-colors ${
                 selectedExperienceId === experience._id
-                  ? "ring-2 ring-primary"
+                  ? "ring-2 ring-[#00FF80]"
                   : ""
               }`}
               onClick={() => handleSelectExperience(experience._id)}

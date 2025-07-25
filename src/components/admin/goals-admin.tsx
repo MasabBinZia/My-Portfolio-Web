@@ -125,7 +125,7 @@ export function GoalsManager() {
             <Card
               key={goal._id}
               className={`cursor-pointer transition-colors ${
-                selectedGoalId === goal._id ? "ring-2 ring-primary" : ""
+                selectedGoalId === goal._id ? "ring-2 ring-[#00FF80]" : ""
               }`}
               onClick={() => handleSelectGoal(goal._id)}
             >

@@ -151,7 +151,7 @@ export function SocialLinksManager() {
             <Card
               key={link._id}
               className={`cursor-pointer transition-colors ${
-                selectedLinkId === link._id ? "ring-2 ring-primary" : ""
+                selectedLinkId === link._id ? "ring-2 ring-[#00FF80]" : ""
               } ${!link.isActive ? "opacity-50" : ""}`}
               onClick={() => handleSelectLink(link._id)}
             >

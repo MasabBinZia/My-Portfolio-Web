@@ -67,7 +67,7 @@ body::-webkit-scrollbar {
   --card-foreground: hsl(0 0% 100%);
   --popover: hsl(0 0% 10%);
   --popover-foreground: hsl(0 0% 100%);
-  --primary: hsl(158 100% 50%);
+  --primary: #00ff80;
   --primary-foreground: hsl(0 0% 5%);
   --secondary: hsl(0 0% 18%);
   --secondary-foreground: hsl(0 0% 100%);

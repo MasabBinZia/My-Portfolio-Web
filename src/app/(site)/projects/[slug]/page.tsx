@@ -278,7 +278,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <div className="mb-8">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-4"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-[#00FF80] transition-colors mb-4"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Projects
@@ -310,11 +310,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 height={64}
               />
               <div>
-                <h1 className="text-4xl font-bold text-primary mb-2">
+                <h1 className="text-4xl font-bold text-[#00FF80] mb-2">
                   {project.title}
                 </h1>
                 <div className="flex items-center gap-2">
-                  <Badge className="bg-primary/10 text-primary border border-primary/10">
+                  <Badge className="bg-[#00FF80]/10 text-[#00FF80] border border-[#00FF80]/10">
                     {project.type}
                   </Badge>
                   <Badge
@@ -338,7 +338,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <Link
               href={project.link}
               target="_blank"
-              className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-[#00FF80] text-[#00FF80]-foreground rounded-lg hover:bg-[#00FF80]/90 transition-colors"
             >
               <FaGlobe className="h-4 w-4" />
               Visit Site
@@ -348,7 +348,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               <Link
                 href={project.github}
                 target="_blank"
-                className="flex items-center gap-2 px-4 py-2 bg-transparent border border-primary/20 rounded-lg hover:bg-primary/5 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-transparent border border-[#00FF80]/20 rounded-lg hover:bg-[#00FF80]/5 transition-colors"
               >
                 <FaGithub className="h-4 w-4" />
                 GitHub
@@ -360,64 +360,64 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
         {/* Project Meta Information */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-          <Card className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0">
+          <Card className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0">
             <CardHeader className="flex flex-row gap-4 items-center px-0">
               <div className="h-10 w-10 ml-2 flex items-center justify-center">
-                <Calendar className="h-6 w-6 text-primary" />
+                <Calendar className="h-6 w-6 text-[#00FF80]" />
               </div>
               <div className="w-full">
-                <CardTitle className="text-lg font-bold group-hover:text-primary transition-colors">
+                <CardTitle className="text-lg font-bold group-hover:text-[#00FF80] transition-colors">
                   Duration
                 </CardTitle>
-                <CardDescription className="text-base group-hover:text-primary/80 transition-colors">
+                <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors">
                   {project.duration}
                 </CardDescription>
               </div>
             </CardHeader>
           </Card>
 
-          <Card className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0">
+          <Card className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0">
             <CardHeader className="flex flex-row gap-4 items-center px-0">
               <div className="h-10 w-10 ml-2 flex items-center justify-center">
-                <Users className="h-6 w-6 text-primary" />
+                <Users className="h-6 w-6 text-[#00FF80]" />
               </div>
               <div className="w-full">
-                <CardTitle className="text-lg font-bold group-hover:text-primary transition-colors">
+                <CardTitle className="text-lg font-bold group-hover:text-[#00FF80] transition-colors">
                   Team Size
                 </CardTitle>
-                <CardDescription className="text-base group-hover:text-primary/80 transition-colors">
+                <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors">
                   {project.team}
                 </CardDescription>
               </div>
             </CardHeader>
           </Card>
 
-          <Card className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0">
+          <Card className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0">
             <CardHeader className="flex flex-row gap-4 items-center px-0">
               <div className="h-10 w-10 ml-2 flex items-center justify-center">
-                <Target className="h-6 w-6 text-primary" />
+                <Target className="h-6 w-6 text-[#00FF80]" />
               </div>
               <div className="w-full">
-                <CardTitle className="text-lg font-bold group-hover:text-primary transition-colors">
+                <CardTitle className="text-lg font-bold group-hover:text-[#00FF80] transition-colors">
                   Role
                 </CardTitle>
-                <CardDescription className="text-base group-hover:text-primary/80 transition-colors">
+                <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors">
                   {project.role}
                 </CardDescription>
               </div>
             </CardHeader>
           </Card>
 
-          <Card className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0">
+          <Card className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0">
             <CardHeader className="flex flex-row gap-4 items-center px-0">
               <div className="h-10 w-10 ml-2 flex items-center justify-center">
-                <Clock className="h-6 w-6 text-primary" />
+                <Clock className="h-6 w-6 text-[#00FF80]" />
               </div>
               <div className="w-full">
-                <CardTitle className="text-lg font-bold group-hover:text-primary transition-colors">
+                <CardTitle className="text-lg font-bold group-hover:text-[#00FF80] transition-colors">
                   Year
                 </CardTitle>
-                <CardDescription className="text-base group-hover:text-primary/80 transition-colors">
+                <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors">
                   {project.date}
                 </CardDescription>
               </div>
@@ -427,21 +427,21 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
         {/* Project Objectives */}
         <div className="mb-12">
-          <h2 className="text-4xl text-primary font-bold mb-6">
+          <h2 className="text-4xl text-[#00FF80] font-bold mb-6">
             Project Objectives
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {project.objectives.map((objective, index) => (
               <Card
                 key={index}
-                className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0"
+                className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0"
               >
                 <CardHeader className="flex flex-row gap-4 items-center px-0">
                   <div className="h-10 w-10 ml-2 flex items-center justify-center">
                     <CheckCircle className="h-6 w-6 text-green-500" />
                   </div>
                   <div className="w-full">
-                    <CardDescription className="text-base group-hover:text-primary/80 transition-colors">
+                    <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors">
                       {objective}
                     </CardDescription>
                   </div>
@@ -453,19 +453,21 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
         {/* Key Features */}
         <div className="mb-12">
-          <h2 className="text-4xl text-primary font-bold mb-6">Key Features</h2>
+          <h2 className="text-4xl text-[#00FF80] font-bold mb-6">
+            Key Features
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {project.features.map((feature, index) => (
               <Card
                 key={index}
-                className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0"
+                className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0"
               >
                 <CardHeader className="flex flex-row gap-4 items-center px-0">
                   <div className="h-10 w-10 ml-2 flex items-center justify-center">
-                    <div className="h-3 w-3 bg-primary rounded-full"></div>
+                    <div className="h-3 w-3 bg-[#00FF80] rounded-full"></div>
                   </div>
                   <div className="w-full">
-                    <CardDescription className="text-base group-hover:text-primary/80 transition-colors">
+                    <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors">
                       {feature}
                     </CardDescription>
                   </div>
@@ -477,13 +479,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
         {/* Tech Stack */}
         <div className="mb-12">
-          <h2 className="text-4xl text-primary font-bold mb-6">Tech Stack</h2>
+          <h2 className="text-4xl text-[#00FF80] font-bold mb-6">Tech Stack</h2>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
             {project.stack.map((item, index) => (
               <TooltipProvider key={index} delayDuration={200}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Card className="bg-transparent border border-primary/20 h-10 w-10 flex items-center justify-center p-0 px-0 hover:bg-primary/5 transition-all group text-center cursor-pointer">
+                    <Card className="bg-transparent border border-[#00FF80]/20 h-10 w-10 flex items-center justify-center p-0 px-0 hover:bg-[#00FF80]/5 transition-all group text-center cursor-pointer">
                       <div className="text-xl mb-2">{item.element}</div>
                     </Card>
                   </TooltipTrigger>
@@ -496,9 +498,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
         {/* Case Study */}
         <div className="mb-12">
-          <h2 className="text-4xl text-primary font-bold mb-6">Case Study</h2>
-          <Card className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-6">
-            <p className="text-lg text-muted-foreground leading-relaxed group-hover:text-primary/80 transition-colors">
+          <h2 className="text-4xl text-[#00FF80] font-bold mb-6">Case Study</h2>
+          <Card className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-6">
+            <p className="text-lg text-muted-foreground leading-relaxed group-hover:text-[#00FF80]/80 transition-colors">
               {project.caseStudy}
             </p>
           </Card>
@@ -506,17 +508,17 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
         {/* Development Process */}
         <div className="mb-12">
-          <h2 className="text-4xl text-primary font-bold mb-6">
+          <h2 className="text-4xl text-[#00FF80] font-bold mb-6">
             Development Process
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {myProcess.map((step, index) => (
               <Card
                 key={index}
-                className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-4 text-center"
+                className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-4 text-center"
               >
                 <div className="text-4xl mb-3">{step.icon}</div>
-                <p className="text-sm font-medium group-hover:text-primary transition-colors">
+                <p className="text-sm font-medium group-hover:text-[#00FF80] transition-colors">
                   {step.processTitle}
                 </p>
               </Card>
@@ -526,7 +528,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
         {/* Challenges & Learnings */}
         <div className="mb-12">
-          <h2 className="text-4xl text-primary font-bold mb-6">
+          <h2 className="text-4xl text-[#00FF80] font-bold mb-6">
             Challenges & Learnings
           </h2>
           <div className="grid  gap-6">
@@ -589,21 +591,21 @@ export default async function Page({ params }: { params: { slug: string } }) {
         {/* Results & Impact */}
         {project.results && (
           <div className="mb-12">
-            <h2 className="text-4xl text-primary font-bold mb-6">
+            <h2 className="text-4xl text-[#00FF80] font-bold mb-6">
               Results & Impact
             </h2>
             <div className="grid gap-4">
               {project.results.map((result, index) => (
                 <Card
                   key={index}
-                  className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0"
+                  className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0"
                 >
                   <CardHeader className="flex flex-row gap-4 items-center px-0">
                     <div className="h-10 w-10 ml-2 flex items-center justify-center">
-                      <CheckCircle className="h-6 w-6 text-primary" />
+                      <CheckCircle className="h-6 w-6 text-[#00FF80]" />
                     </div>
                     <div className="w-full">
-                      <CardDescription className="text-base group-hover:text-primary/80 transition-colors">
+                      <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors">
                         {result}
                       </CardDescription>
                     </div>
@@ -617,7 +619,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         {/* Back to Projects */}
         <div className="text-center">
           <Link href="/projects">
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-2">
+            <Button className="bg-[#00FF80] hover:bg-[#00FF80]/90 text-[#00FF80]-foreground px-8 py-2">
               View More Projects
             </Button>
           </Link>

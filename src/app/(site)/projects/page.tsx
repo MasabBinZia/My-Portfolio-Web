@@ -102,7 +102,7 @@ export default function ProjectsPage() {
     <div className="container mx-auto px-4 py-12">
       {/* Header Section */}
       <div className="mb-12">
-        <h1 className="text-5xl font-bold mb-4 text-primary">My Projects</h1>
+        <h1 className="text-5xl font-bold mb-4 text-[#00FF80]">My Projects</h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
           Browse through my portfolio of projects and work. Each project
           represents a unique challenge and showcases different aspects of my
@@ -113,10 +113,12 @@ export default function ProjectsPage() {
 
       {/* Projects Section */}
       <div className="mt-10">
-        <h2 className="text-4xl text-primary font-bold flex items-center justify-between mb-6">
+        <h2 className="text-4xl text-[#00FF80] font-bold flex items-center justify-between mb-6">
           Projects{" "}
           <span className="flex items-center gap-2">
-            <Badge className="bg-primary/10 text-primary text-lg">Work</Badge>
+            <Badge className="bg-[#00FF80]/10 text-[#00FF80] text-lg">
+              Work
+            </Badge>
             <Badge className="text-lg text-white" variant={"outline"}>
               Personal
             </Badge>
@@ -127,7 +129,7 @@ export default function ProjectsPage() {
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="w-full bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-0 px-0 mt-2"
+              className="w-full bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-0 px-0 mt-2"
             >
               <CardHeader className="flex flex-row gap-4 items-center p-4">
                 <img
@@ -139,14 +141,14 @@ export default function ProjectsPage() {
                 />
                 <div className="w-full">
                   <div className="flex gap-4 items-center mb-2">
-                    <CardTitle className="text-xl font-bold line-clamp-1 group-hover:text-primary transition-colors">
+                    <CardTitle className="text-xl font-bold line-clamp-1 group-hover:text-[#00FF80] transition-colors">
                       {project.title}
                     </CardTitle>
                     <div className="flex items-center gap-2">
                       <Badge
                         className={`text-xs ${
                           project.type === "Work"
-                            ? "bg-primary/10 text-primary"
+                            ? "bg-[#00FF80]/10 text-[#00FF80]"
                             : "bg-muted text-muted-foreground"
                         }`}
                       >
@@ -165,7 +167,7 @@ export default function ProjectsPage() {
                     </div>
                   </div>
 
-                  <CardDescription className="line-clamp-2 group-hover:text-primary/80 transition-colors mb-3">
+                  <CardDescription className="line-clamp-2 group-hover:text-[#00FF80]/80 transition-colors mb-3">
                     {project.description}
                   </CardDescription>
 
@@ -192,7 +194,7 @@ export default function ProjectsPage() {
                         <Button
                           size="sm"
                           variant="ghost"
-                          className="h-8 w-8 p-0 hover:bg-primary/10 hover:text-primary"
+                          className="h-8 w-8 p-0 hover:bg-[#00FF80]/10 hover:text-[#00FF80]"
                         >
                           <Github className="h-4 w-4" />
                         </Button>
@@ -206,7 +208,7 @@ export default function ProjectsPage() {
                           <Button
                             size="sm"
                             variant="ghost"
-                            className="h-8 w-8 p-0 hover:bg-primary/10 hover:text-primary"
+                            className="h-8 w-8 p-0 hover:bg-[#00FF80]/10 hover:text-[#00FF80]"
                           >
                             <ExternalLink className="h-4 w-4" />
                           </Button>
@@ -220,7 +222,7 @@ export default function ProjectsPage() {
           ))}
 
           <Button
-            className="mt-6 w-1/2 mx-auto bg-transparent hover:bg-primary/5 hover:text-primary transition-all"
+            className="mt-6 w-1/2 mx-auto bg-transparent hover:bg-[#00FF80]/5 hover:text-[#00FF80] transition-all"
             variant={"outline"}
           >
             View All Projects
@@ -229,8 +231,8 @@ export default function ProjectsPage() {
       </div>
 
       {/* Additional Info Section */}
-      <div className="mt-16 p-6 rounded-lg bg-card/50 border border-primary/20">
-        <h3 className="text-2xl font-bold mb-4 text-primary">
+      <div className="mt-16 p-6 rounded-lg bg-card/50 border border-[#00FF80]/20">
+        <h3 className="text-2xl font-bold mb-4 text-[#00FF80]">
           Looking for Something Specific?
         </h3>
         <p className="text-muted-foreground mb-4">
@@ -239,12 +241,12 @@ export default function ProjectsPage() {
           questions about my work, feel free to reach out!
         </p>
         <div className="flex gap-4">
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+          <Button className="bg-[#00FF80] hover:bg-[#00FF80]/90 text-[#00FF80]-foreground">
             Get In Touch
           </Button>
           <Button
             variant="outline"
-            className="hover:bg-primary/5 hover:text-primary"
+            className="hover:bg-[#00FF80]/5 hover:text-[#00FF80]"
           >
             View Resume
           </Button>

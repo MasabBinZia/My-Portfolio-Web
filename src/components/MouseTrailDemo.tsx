@@ -20,8 +20,8 @@ const Icons = {
         width="86"
         height="86"
         rx="14"
-        fill="hsl(var(--primary))"
-        className="fill-primary transition-all duration-500 ease-in-out group-hover:fill-accent"
+        fill="hsl(var(--[#00FF80]))"
+        className="fill-[#00FF80] transition-all duration-500 ease-in-out group-hover:fill-accent"
       />
       <path
         fill-rule="evenodd"
@@ -43,8 +43,8 @@ const Icons = {
         width="86"
         height="86"
         rx="14"
-        fill="hsl(var(--primary))"
-        className="fill-primary transition-all duration-500 ease-in-out group-hover:fill-accent"
+        fill="hsl(var(--[#00FF80]))"
+        className="fill-[#00FF80] transition-all duration-500 ease-in-out group-hover:fill-accent"
       />
       <path
         fill-rule="evenodd"
@@ -65,9 +65,9 @@ const Icons = {
       <rect
         width="86"
         height="86"
-        className="fill-primary transition-all duration-500 ease-in-out group-hover:fill-accent"
+        className="fill-[#00FF80] transition-all duration-500 ease-in-out group-hover:fill-accent"
         rx="14"
-        fill="hsl(var(--primary))"
+        fill="hsl(var(--[#00FF80]))"
       />
       <path
         fill-rule="evenodd"

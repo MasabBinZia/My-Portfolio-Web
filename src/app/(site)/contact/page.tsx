@@ -132,7 +132,9 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-12">
       {/* Header Section */}
       <div className="mb-12">
-        <h1 className="text-5xl font-bold mb-4 text-primary">Let's Connect</h1>
+        <h1 className="text-5xl font-bold mb-4 text-[#00FF80]">
+          Let's Connect
+        </h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
           Ready to bring your project to life? I'm here to help you build
           something amazing. Whether you need a full-stack application, mobile
@@ -145,12 +147,12 @@ export default function ContactPage() {
       <div className="mb-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="relative flex h-3 w-3 items-center justify-center">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00FF80] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-[#00FF80]"></span>
           </span>
           <p className="text-lg">Available for new projects</p>
         </div>
-        <Badge className="bg-primary/10 text-primary text-sm">
+        <Badge className="bg-[#00FF80]/10 text-[#00FF80] text-sm">
           Responding within 24h
         </Badge>
       </div>
@@ -158,9 +160,9 @@ export default function ContactPage() {
       <div className="grid  gap-8">
         {/* Contact Form */}
         <div className="lg:col-span-2">
-          <Card className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all">
+          <Card className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-primary flex items-center gap-2">
+              <CardTitle className="text-2xl font-bold text-[#00FF80] flex items-center gap-2">
                 <MessageSquare className="h-6 w-6" />
                 Send a Message
               </CardTitle>
@@ -181,14 +183,14 @@ export default function ContactPage() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-primary">
+                          <FormLabel className="text-[#00FF80]">
                             Full Name
                           </FormLabel>
                           <FormControl>
                             <Input
                               placeholder="Enter your full name"
                               {...field}
-                              className="bg-background border-primary/20 focus:border-primary"
+                              className="bg-background border-[#00FF80]/20 focus:border-[#00FF80]"
                             />
                           </FormControl>
                           <FormMessage />
@@ -200,7 +202,7 @@ export default function ContactPage() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-primary">
+                          <FormLabel className="text-[#00FF80]">
                             Email Address
                           </FormLabel>
                           <FormControl>
@@ -208,7 +210,7 @@ export default function ContactPage() {
                               type="email"
                               placeholder="Enter your email"
                               {...field}
-                              className="bg-background border-primary/20 focus:border-primary"
+                              className="bg-background border-[#00FF80]/20 focus:border-[#00FF80]"
                             />
                           </FormControl>
                           <FormMessage />
@@ -222,13 +224,13 @@ export default function ContactPage() {
                     name="projectType"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-primary">
+                        <FormLabel className="text-[#00FF80]">
                           Project Type
                         </FormLabel>
                         <FormControl>
                           <select
                             {...field}
-                            className="w-full p-2 rounded-md bg-background border border-primary/20 focus:border-primary focus:outline-none"
+                            className="w-full p-2 rounded-md bg-background border border-[#00FF80]/20 focus:border-[#00FF80] focus:outline-none"
                           >
                             <option value="">Select project type</option>
                             {projectTypes.map((type) => (
@@ -248,12 +250,14 @@ export default function ContactPage() {
                     name="subject"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-primary">Subject</FormLabel>
+                        <FormLabel className="text-[#00FF80]">
+                          Subject
+                        </FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Brief description of your project"
                             {...field}
-                            className="bg-background border-primary/20 focus:border-primary"
+                            className="bg-background border-[#00FF80]/20 focus:border-[#00FF80]"
                           />
                         </FormControl>
                         <FormMessage />
@@ -266,11 +270,13 @@ export default function ContactPage() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-primary">Message</FormLabel>
+                        <FormLabel className="text-[#00FF80]">
+                          Message
+                        </FormLabel>
                         <FormControl>
                           <Textarea
                             placeholder="Tell me more about your project requirements, timeline, and budget..."
-                            className="min-h-[120px] bg-background border-primary/20 focus:border-primary"
+                            className="min-h-[120px] bg-background border-[#00FF80]/20 focus:border-[#00FF80]"
                             {...field}
                           />
                         </FormControl>
@@ -302,11 +308,11 @@ export default function ContactPage() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground flex items-center gap-2"
+                    className="w-full bg-[#00FF80] hover:bg-[#00FF80]/90 text-[#00FF80]-foreground flex items-center gap-2"
                   >
                     {isSubmitting ? (
                       <>
-                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary-foreground"></div>
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-[#00FF80]-foreground"></div>
                         Sending...
                       </>
                     ) : (
@@ -325,9 +331,9 @@ export default function ContactPage() {
         {/* Contact Info & Calendly */}
         <div className="space-y-6">
           {/* Calendly Integration */}
-          <Card className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all">
+          <Card className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all">
             <CardHeader>
-              <CardTitle className="text-xl font-bold text-primary flex items-center gap-2">
+              <CardTitle className="text-xl font-bold text-[#00FF80] flex items-center gap-2">
                 <Calendar className="h-5 w-5" />
                 Schedule a Call
               </CardTitle>
@@ -338,8 +344,8 @@ export default function ContactPage() {
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
-                <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
-                  <h4 className="font-semibold text-primary mb-2">
+                <div className="p-4 bg-[#00FF80]/10 rounded-lg border border-[#00FF80]/20">
+                  <h4 className="font-semibold text-[#00FF80] mb-2">
                     Free Consultation
                   </h4>
                   <p className="text-sm text-muted-foreground mb-3">
@@ -353,14 +359,14 @@ export default function ContactPage() {
                 </div>
 
                 {/* Calendly Embed Placeholder */}
-                <div className="bg-muted/20 border border-primary/20 rounded-lg p-6 text-center">
-                  <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
+                <div className="bg-muted/20 border border-[#00FF80]/20 rounded-lg p-6 text-center">
+                  <Calendar className="h-12 w-12 text-[#00FF80] mx-auto mb-4" />
                   <p className="text-muted-foreground mb-4">
                     Calendly widget will be embedded here
                   </p>
                   <Button
                     variant="outline"
-                    className="hover:bg-primary/5 hover:text-primary"
+                    className="hover:bg-[#00FF80]/5 hover:text-[#00FF80]"
                     onClick={() =>
                       window.open(
                         "https://calendly.com/your-username",
@@ -376,9 +382,9 @@ export default function ContactPage() {
           </Card>
 
           {/* Quick Response */}
-          <Card className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all">
+          <Card className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all">
             <CardHeader>
-              <CardTitle className="text-xl font-bold text-primary flex items-center gap-2">
+              <CardTitle className="text-xl font-bold text-[#00FF80] flex items-center gap-2">
                 <Briefcase className="h-5 w-5" />
                 Quick Response
               </CardTitle>
@@ -391,7 +397,7 @@ export default function ContactPage() {
               <div className="grid grid-cols-4 gap-4">
                 <Button
                   variant="outline"
-                  className="w-full hover:bg-primary/5 hover:text-primary flex items-center gap-2"
+                  className="w-full hover:bg-[#00FF80]/5 hover:text-[#00FF80] flex items-center gap-2"
                   onClick={() =>
                     window.open("https://wa.me/+921234567890", "_blank")
                   }
@@ -401,7 +407,7 @@ export default function ContactPage() {
                 </Button>
                 <Button
                   variant="outline"
-                  className="w-full hover:bg-primary/5 hover:text-primary"
+                  className="w-full hover:bg-[#00FF80]/5 hover:text-[#00FF80]"
                   onClick={() =>
                     window.open(
                       "https://linkedin.com/in/masab-bin-zia",
@@ -419,7 +425,7 @@ export default function ContactPage() {
       </div>
 
       <div className="mt-16">
-        <h3 className="text-2xl font-bold mb-6 text-primary">
+        <h3 className="text-2xl font-bold mb-6 text-[#00FF80]">
           Frequently Asked Questions
         </h3>
         <div className="grid gap-4">
@@ -447,17 +453,17 @@ export default function ContactPage() {
           ].map((faq, index) => (
             <Card
               key={index}
-              className="bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0"
+              className="bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0"
             >
               <CardHeader className="flex flex-row gap-4 items-center px-0">
                 <div className="h-10 w-10 ml-2 flex items-center justify-center">
-                  <HelpCircle className="h-6 w-6 text-primary" />
+                  <HelpCircle className="h-6 w-6 text-[#00FF80]" />
                 </div>
                 <div className="w-full">
-                  <CardTitle className="text-lg font-semibold group-hover:text-primary transition-colors">
+                  <CardTitle className="text-lg font-semibold group-hover:text-[#00FF80] transition-colors">
                     {faq.question}
                   </CardTitle>
-                  <CardDescription className="text-base group-hover:text-primary/80 transition-colors">
+                  <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors">
                     {faq.answer}
                   </CardDescription>
                 </div>

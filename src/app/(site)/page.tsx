@@ -72,12 +72,12 @@ export default function HomePage() {
         {" "}
         <div className="mt-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-primary"></span>
-            <span className="absolute h-3 w-3 animate-ping rounded-full bg-primary opacity-75"></span>
+            <span className="relative flex h-3 w-3 items-center justify-center rounded-full bg-[#00FF80]"></span>
+            <span className="absolute h-3 w-3 animate-ping rounded-full bg-[#00FF80] opacity-75"></span>
             <p className="text-2xl">Available for hire</p>
           </div>
           <p className="flex items-center justify-center gap-1 text-2xl">
-            <strong className="text-primary">{78}</strong> - Views
+            <strong className="text-[#00FF80]">{78}</strong> - Views
           </p>
         </div>
         <div className="flex  gap-5">
@@ -85,14 +85,14 @@ export default function HomePage() {
           <div className="text-2xl max-w-lg">
             <h1 className="mb-2 mt-5">
               👋 Hey there! I&apos;m{" "}
-              <span className="text-primary">Masab Bin Zia.</span>
+              <span className="text-[#00FF80]">Masab Bin Zia.</span>
             </h1>
             <p className="mb-2 text-lg">Modern Full-Stack Engineer.</p>
             <p className="mb-2 text-lg">
               I’m currently learning Learning AI, Web3.0 & DevOps.
             </p>
             <p className="text">
-              <span className="font-semibold text-primary dark:text-foreground">
+              <span className="font-semibold text-[#00FF80] dark:text-foreground">
                 {" "}
                 I&apos;m a Full Stack Developer with 3+ years
               </span>{" "}
@@ -112,10 +112,12 @@ export default function HomePage() {
       </section>
 
       <div className="mt-10">
-        <h2 className="text-4xl text-primary font-bold flex items-center justify-between">
+        <h2 className="text-4xl text-[#00FF80] font-bold flex items-center justify-between">
           Projects{" "}
           <span className="flex items-center gap-2">
-            <Badge className="bg-primary/10 text-primary text-lg">Work</Badge>
+            <Badge className="bg-[#00FF80]/10 text-[#00FF80] text-lg">
+              Work
+            </Badge>
             <Badge className="text-lg text-white" variant={"outline"}>
               Personal
             </Badge>
@@ -124,7 +126,7 @@ export default function HomePage() {
         <section className="flex flex-col">
           {[1, 2, 3, 4].map((_, index) => (
             <Link href={""} key={index}>
-              <Card className="w-full bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0 mt-2">
+              <Card className="w-full bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0 mt-2">
                 <CardHeader className="flex flex-row gap-4 items-center px-0">
                   <img
                     src={
@@ -138,11 +140,11 @@ export default function HomePage() {
 
                   <div className="w-full">
                     <div className="flex gap-4 items-center">
-                      <CardTitle className="text-xl font-bold line-clamp-1 group-hover:text-primary transition-colors">
+                      <CardTitle className="text-xl font-bold line-clamp-1 group-hover:text-[#00FF80] transition-colors">
                         Project {index + 1}
                       </CardTitle>
                     </div>
-                    <CardDescription className="flex justify-between items-center line-clamp-2 group-hover:text-primary/80 transition-colors">
+                    <CardDescription className="flex justify-between items-center line-clamp-2 group-hover:text-[#00FF80]/80 transition-colors">
                       Project {index + 1} description
                     </CardDescription>
                   </div>
@@ -151,7 +153,7 @@ export default function HomePage() {
             </Link>
           ))}
           <Button
-            className="mt-4 w-1/2 mx-auto bg-transparent hover:bg-primary/5 hover:text-primary transition-all"
+            className="mt-4 w-1/2 mx-auto bg-transparent hover:bg-[#00FF80]/5 hover:text-[#00FF80] transition-all"
             variant={"outline"}
           >
             View All
@@ -160,7 +162,7 @@ export default function HomePage() {
       </div>
 
       <div className="mt-10">
-        <h2 className="text-4xl text-primary font-bold">Experience</h2>
+        <h2 className="text-4xl text-[#00FF80] font-bold">Experience</h2>
         <section className="flex flex-col">
           {[
             {
@@ -187,7 +189,7 @@ export default function HomePage() {
           ].map((experience, index) => (
             <Card
               key={index}
-              className="w-full bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0 mt-2"
+              className="w-full bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0 mt-2"
             >
               <CardHeader className="flex flex-row gap-4 items-center px-0">
                 <div className="h-10 w-10 ml-2 flex items-center justify-center">
@@ -203,18 +205,18 @@ export default function HomePage() {
                 <div className="w-full">
                   <div className="flex gap-4 items-center justify-between">
                     <div>
-                      <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">
+                      <CardTitle className="text-xl font-bold group-hover:text-[#00FF80] transition-colors">
                         {experience.company}
                       </CardTitle>
-                      <CardDescription className="text-base group-hover:text-primary/80 transition-colors flex items-center gap-2">
+                      <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors flex items-center gap-2">
                         {experience.role}
-                        <span className="text-sm text-primary/80 flex items-center gap-1">
+                        <span className="text-sm text-[#00FF80]/80 flex items-center gap-1">
                           <MapPin className="w-4 h-4 mb-2" />
                           {experience.location}
                         </span>
                       </CardDescription>
                     </div>
-                    <Badge className="mr-4 bg-primary/10 text-primary border border-primary/10">
+                    <Badge className="mr-4 bg-[#00FF80]/10 text-[#00FF80] border border-[#00FF80]/10">
                       {experience.period}
                     </Badge>
                   </div>
@@ -226,7 +228,7 @@ export default function HomePage() {
       </div>
 
       <div className="mt-10">
-        <h2 className="text-4xl text-primary font-bold">My Expertise</h2>
+        <h2 className="text-4xl text-[#00FF80] font-bold">My Expertise</h2>
         <div className="w-full grid md:grid-cols-2 lg:grid-cols-2 gap-5">
           {skills.map((skill, index) => (
             <div key={index}>
@@ -242,12 +244,12 @@ export default function HomePage() {
       </div>
 
       <div className="mt-10">
-        <h2 className="text-4xl text-primary font-bold">Career Goals</h2>
+        <h2 className="text-4xl text-[#00FF80] font-bold">Career Goals</h2>
         <div className="grid mt-2 gap-2">
           {goals.map((goal, index) => (
             <Card
               key={index}
-              className="w-full bg-transparent border border-primary/20 hover:bg-primary/5 transition-all group p-2 px-0 mt-2"
+              className="w-full bg-transparent border border-[#00FF80]/20 hover:bg-[#00FF80]/5 transition-all group p-2 px-0 mt-2"
             >
               <CardHeader className="flex flex-row gap-4 items-center px-0">
                 <div className="h-10 w-10 ml-2 flex items-center justify-center">
@@ -257,10 +259,10 @@ export default function HomePage() {
                 <div className="w-full">
                   <div className="flex gap-4 items-center justify-between">
                     <div>
-                      <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">
+                      <CardTitle className="text-xl font-bold group-hover:text-[#00FF80] transition-colors">
                         {goal.title}
                       </CardTitle>
-                      <CardDescription className="text-base group-hover:text-primary/80 transition-colors">
+                      <CardDescription className="text-base group-hover:text-[#00FF80]/80 transition-colors">
                         {goal.descritpion}
                       </CardDescription>
                     </div>
@@ -273,10 +275,10 @@ export default function HomePage() {
       </div>
 
       <div className="mt-10">
-        <h2 className="text-4xl text-primary font-bold">
+        <h2 className="text-4xl text-[#00FF80] font-bold">
           How frequently I code
         </h2>
-        <div className="dark:bg-primary-bg bg-secondary-bg hidden rounded-lg border border-primary/20 p-8 mt-4 lg:block">
+        <div className="dark:bg-[#00FF80]-bg bg-secondary-bg hidden rounded-lg border border-[#00FF80]/20 p-8 mt-4 lg:block">
           <GitHubCalendar
             username={"MasabBinZia"}
             blockSize={9}
@@ -286,7 +288,7 @@ export default function HomePage() {
       </div>
 
       <div className="mt-10">
-        <h2 className="text-4xl text-primary font-bold">Connect with me</h2>
+        <h2 className="text-4xl text-[#00FF80] font-bold">Connect with me</h2>
         <div className="mt-4">
           <MouseTrailDemo />
         </div>
